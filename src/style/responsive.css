@@ -1,0 +1,2288 @@
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .delivery {
+        background-size: cover;
+    }
+
+    .height-955 {
+        height: 880px;
+    }
+
+    .banner-bg.slider5-height {
+        height: 880px;
+    }
+    .hero4-title {
+        font-size: 71px;
+    }
+
+    .shop-product-img.w-100 img {
+        height: 250px;
+    }
+
+    .footer-link img {
+        height: 70px;
+    }
+
+    .ad-banner-img {
+        height: 800px;
+    }
+
+    .ad-about-bottom-image {
+        top: 60%;
+        left: 30%;
+        width: 320px;
+    }
+
+    .ad-about-rounded-text {
+        left: 15%;
+        top: 35%;
+    }
+
+    .ad-title-text {
+        font-size: 26px;
+    }
+
+    .ad-description-text {
+        width: 55%;
+    }
+
+    .ad-single-service h5 {
+        font-size: 22px;
+    }
+
+    .ad-footer-subscribe h4 {
+        font-size: 28px;
+    }
+
+    .ad-footer-list h5 {
+        font-size: 22px;
+    }
+
+    .ad-header-menu-container a, .ad-header-pages-container a {
+        font-size: 20px;
+    }
+
+    .ad-description-text {
+        font-size: 16px;
+    }
+
+    .ad-single-card h4 {
+        font-size: 20px;
+    }
+
+    .ad-reservation-single-content span {
+        font-size: 16px;
+    }
+
+    .ad-reservation-single-content p span {
+        font-size: 26px;
+    }
+    .about-page-discount-text-container h4 {
+        font-size: 32px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+        top: 15%;
+        left: 66%;
+    }
+    .reservation-page-subscribe p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .cb-category-inner-slider-wrapper.pl-58 {
+        padding-left: 0;
+    }
+    span.ad-offer-price:before {
+        width: 100px;
+    }
+    .ad-chef-single-card h4 {
+        padding-top: 260px;
+        font-size: 20px;
+    }
+    .ad-chef-single-card p {
+        font-size: 16px;
+    }
+    .ad-chef-image img {
+        width: 240px;
+    }   
+    .ad-single-review p {
+        font-size: 16px;
+    }
+    .ad-chef-image {
+        top: calc(0% - 30px);
+    }
+    .app-section.app-section-1 {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .ad-chef-single-card {
+        width: 250px;
+    }
+    .h-100.pl-40 {
+        padding-left: 20px;
+    }
+
+    .about-content.pl-50 {
+        padding-left: 25px;
+    }
+    .ad-reservation-container {
+        padding-top: 330px;
+    }
+    .ad-chef-container {
+        margin-top: 120px;
+    }
+    ul.about-ul {
+        display: block;
+    }
+
+    ul.about-ul li {
+        width: 100%;
+    }
+
+    .delivery {
+        background-size: cover;
+    }
+
+    .banner-3 .banner-slider {
+        padding: 70px 0;
+    }
+
+    .hero4-title {
+        font-size: 55px;
+    }
+
+    .hero4-title.hero5-title {
+        font-size: 65px;
+    }
+
+    .height-955 {
+        height: 780px;
+    }
+
+    .banner-bg.slider5-height {
+        height: 780px;
+    }
+
+    .product-img img {
+        height: 276px;
+    }
+
+    .footer-link img {
+        height: 50px;
+    }
+
+    section.single-blog-section .blog-img img {
+        height: 400px;
+    }
+
+    .delivery-area.delivery-area-3 .video-btn {
+        margin: 0;
+    }
+
+    .quick-view-product-infos p {
+        line-height: 1.7;
+    }
+
+    .quick-view-product-action {
+        margin-top: 0;
+    }
+
+    .postbox__thumb.w-img img {
+        height: 350px;
+    }
+
+    .service-details-img img {
+        height: 350px;
+    }
+
+    .ad-banner-img {
+        height: 720px;
+    }
+
+    .ad-about-bottom-image {
+        top: 55%;
+        left: 32%;
+        width: 320px;
+    }
+
+    .ad-about-rounded-text {
+        left: 18%;
+        top: 30%;
+    }
+
+    .ad-title-text {
+        font-size: 26px;
+    }
+
+    .ad-description-text {
+        width: 60%;
+    }
+
+    .ad-single-service h5 {
+        font-size: 22px;
+    }
+
+    .ad-footer-subscribe h4 {
+        font-size: 28px;
+    }
+
+    .ad-footer-list h5 {
+        font-size: 20px;
+    }
+
+    .ad-header-menu-container a, .ad-header-pages-container a {
+        font-size: 17px;
+    }
+
+    .ad-reservation-form input, .ad-reservation-form select {
+        font-size: 18px;
+    }
+
+    .ad-description-text {
+        font-size: 16px;
+    }
+
+    .ad-single-card h4 {
+        font-size: 20px;
+    }
+
+    .ad-reservation-single-content span {
+        font-size: 16px;
+    }
+
+    .ad-reservation-single-content p span {
+        font-size: 26px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+        left: 60%;
+        top: 7%;
+    }
+    .about-page-discount-text-container h4 {
+        font-size: 30px;
+    }
+    .container.ad-reservation-container.about-page-shop-details-container {
+        padding: 80px 40px;
+    }
+    .ad-footer-list p {
+        font-size: 14px;
+    }
+    .reservation-page-subscribe-container {
+        text-align: center;
+    }
+    .reservation-page-subscribe input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .note-title {
+        font-size: 32px;
+    }
+    .ad-offer-tab-container {
+        margin-bottom: 35px;
+    }
+    .cb-category-inner-text.pl-50 {
+        padding-left: 35px;
+    }
+    .ad-chef-custom-row {
+        row-gap: 80px;
+    }
+    .ad-chef-image {
+        top: calc(0% - 50px);
+        left: calc(0% - 10px);
+    }
+    .ad-chef-image img {
+        width: 260px;
+    }
+    .ad-chef-single-card h4 {
+        font-size: 22px;
+    }
+    .cb-category-inner-slider-wrapper.pl-58 {
+        padding-left: 0;
+    }
+
+    .cb-offer-cta-content-subtitle {
+        font-size: 20px;
+    }
+
+    .cb-offer-cta-content-title {
+        font-size: 50px;
+    }
+
+    .cb-section-title {
+        font-size: 32px;
+    }
+
+    .product-main-info .name {
+        font-size: 30px;
+    }
+
+    .team-about-details-wrapper.pl-30 {
+        padding-left: 10px;
+    }
+
+    .banner-3 .banner-slider {
+        padding: 90px 0;
+    }
+
+    .available-head {
+        font-size: 32px;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .sec-title {
+        font-size: 32px;
+    }
+
+    .app-title {
+        font-size: 32px;
+    }
+
+    .banner-2 .banner-bg {
+        height: 700px;
+    }
+
+    .pricing-2 .plan-price {
+        font-size: 36px;
+    }
+
+    .pricing-2 .custom-btn-alt {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .customer-1 .review-pagination {
+        margin-left: 25px;
+    }
+
+    .hero4-title {
+        font-size: 55px;
+    }
+
+    .hero-sub-title {
+        font-size: 22px;
+    }
+
+    .footer-link img {
+        height: 90px;
+    }
+
+    /* Quick view */
+    .single-product-quick-view {
+        height: 370px;
+    }
+
+    .quick-view-container {
+        height: 100%;
+    }
+
+    .quick-view-text-container {
+        padding: 15px;
+    }
+
+    .quick-view-text-container h3.product-title {
+        font-size: 20px;
+    }
+
+    .quick-view-price-range {
+        font-size: 18px;
+    }
+
+    .quick-view-product-infos p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .quick-view-product-action {
+        margin: 0;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .quick-view-product-details-quantity {
+        height: 37px;
+        line-height: 37px;
+    }
+
+    a.quick-view-btn {
+        line-height: 18px;
+    }
+
+    a.quick-view-wishlist-btn {
+        line-height: 15px;
+    }
+
+    input.cart-product-quantity-input {
+        max-width: 50px;
+    }
+
+    /* quick view */
+    .delivery-area.delivery-area-3 .video-btn {
+        margin: 0;
+    }
+
+    .postbox__thumb.w-img img {
+        height: 350px;
+    }
+
+    section.single-blog-section .blog-img img {
+        height: 400px;
+    }
+
+    .blog-inside-img {
+        height: 350px;
+    }
+
+    .service-details-img img {
+        height: 350px;
+    }
+
+    .ad-about-image-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ad-banner-img {
+        height: 720px;
+    }
+    .ad-about-bottom-image {
+        top: 55%;
+        left: 53%;
+        width: 280px;
+    }
+  
+    .ad-about-rounded-text {
+        left: 45%;
+        top: 30%;  
+    }
+  
+    .ad-title-text {
+        font-size: 26px;
+    }
+  
+    .ad-description-text {
+        width: 70%;
+    }
+    .ad-single-service h5 {
+      font-size: 22px;
+    }
+    .ad-footer-subscribe h4 {
+      font-size: 22px;
+    }
+    .ad-footer-list h5 {
+      font-size: 18px;
+    }
+    .ad-header-menu-container a, .ad-header-pages-container a {
+        font-size: 17px;
+    }
+    .ad-reservation-form input, .ad-reservation-form select {
+        font-size: 18px;
+    }
+    .ad-description-text {
+        font-size: 15px;
+    }
+    .ad-single-card h4 {
+        font-size: 18px;
+    }
+    .ad-reservation-single-content span {
+        font-size: 14px;
+    }
+    .ad-reservation-single-content p span {
+        font-size: 20px;
+    }
+    .ad-reservation-single-content {
+        gap: 15px;
+    }
+    .ad-reservation-single-content img {
+        width: 40px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+        left: 72%;
+        top: 6%;
+    }
+    .container.ad-reservation-container.about-page-shop-details-container {
+        padding: 80px 40px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .footer-link img {
+        height: 60px;
+    }
+
+    .all-product-1 .product-details {
+        padding: 20px;
+    }
+
+    .customer-img img {
+        background-size: 100%;
+    }
+
+    .customer-1 .review-pagination {
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+
+    .banner-title.banner-title2 {
+        font-size: 60px;
+    }
+
+    .cpy-8 {
+        padding: 70px 0;
+    }
+
+    .describe {
+        padding: 60px 0;
+    }
+
+    .cpy-6 {
+        padding: 70px 0;
+    }
+
+    .pricing-card:hover {
+        transform: scale(1);
+    }
+
+    .footer-content-wrapper .form-control {
+        font-size: 12px;
+    }
+
+    .delivery-area.delivery-area-3 .video-btn {
+        margin: 0;
+    }
+
+    .post-details {
+        padding: 20px 15px;
+    }
+
+    .tabs .tab-links .item-link:last-child:after {
+        background-color: transparent;
+    }
+
+    .customer.customer-1.cpy-8 .customer-img img {
+        height: 480px;
+    }
+
+    /* Quick view */
+    .single-product-quick-view {
+        height: 300px;
+    }
+
+    .quick-view-container {
+        height: 100%;
+    }
+
+    .quick-view-text-container {
+        padding: 10px;
+    }
+
+    .quick-view-text-container h3.product-title {
+        font-size: 18px;
+    }
+
+    .quick-view-price-range {
+        font-size: 16px;
+    }
+
+    .quick-view-product-infos p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .quick-view-product-action {
+        margin: 0;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .quick-view-product-details-quantity {
+        height: 37px;
+        line-height: 37px;
+    }
+
+    a.quick-view-btn {
+        line-height: 15px;
+    }
+
+    a.quick-view-wishlist-btn {
+        line-height: 15px;
+    }
+
+    /* quick view */
+    .postbox__content {
+        padding: 30px;
+        ;
+        padding-top: 25px;
+    }
+
+    section.single-blog-section .blog-img img {
+        height: 400px;
+    }
+
+    .service-details-img img {
+        height: 350px;
+    }
+
+    .shop-product-img.w-100 img {
+        height: 350px;
+    }
+
+    .view-img img {
+        width: 100%;
+        height: 440px;
+    }
+
+    .rating-div p {
+        margin: 0;
+    }
+
+    ul.rating {
+        margin: 0;
+    }
+    .ad-banner-img {
+        height: 500px;
+    }
+    .ad-about-image-container {
+        width: 100%;
+    }
+    .ad-banner-text-container {
+        padding-right: 15px;
+    }
+    .ad-description-text {
+        font-size: 14px;
+        width: 70%;
+    }
+    .ad-chef-image img {
+        width: 250px;
+        max-width: unset;
+    }
+    .ad-chef-image {
+        top: calc(0% - 30px);
+        left: calc(0% - 18px);
+    }
+    .ad-offer-bottom-container h5 {
+        font-size: 14px;
+    }
+    .ad-chef-container {
+        margin-top: 120px;
+    }
+    .ad-chef-custom-row {
+        row-gap: 50px;
+    }
+    .ad-reservation-form-container {
+        padding-top: 30px;
+    }
+    .ad-reservation-form input, .ad-reservation-form select {
+        font-size: 16px;
+    }
+    .ad-reservation-form i {
+        font-size: 18px;
+    }
+    .ad-reservation-single-content p span {
+        font-size: 20px;
+    }
+    .ad-reservation-single-content span {
+        font-size: 16px;
+    }
+    .ad-reservation-container {
+        flex-wrap: wrap;
+    }
+    .ad-reservation-line-shape.ad-reservation-second-line-shape {
+        display: none;
+    }
+    .ad-reservation-single-content {
+        gap: 10px;
+    }
+    .ad-reservation-line-shape {
+        padding: 0 10px;
+    }
+    .ad-reservation-single-content img {
+        width: 35px;
+    }
+    .ad-single-review p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .ad-review-carousel {
+        left: 8%;
+    }
+    .ad-offer-single-card {
+        padding: 0;
+    }
+    .ad-single-review i {
+        font-size: 18px;
+    }
+    .ad-review-person-container {
+        margin-top: 20px;
+    }
+    .ad-footer-subscribe {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .ad-footer-list h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .ad-footer-bottom p {
+        font-size: 12px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+        left: 68%;
+        top: 5%;
+    }
+    .container.ad-reservation-container.about-page-shop-details-container {
+        padding: 60px 0;
+    }
+    .ad-reservation-line-shape img {
+        width: 40px;
+    }
+    .ad-single-review {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 575px) {
+    .footer-link img {
+        height: 124px;
+    }
+    .ad-footer-bottom p {
+        text-align: center;
+    }
+    .cpy-8 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .ad-footer-bottom-img-container {
+        text-align: center;
+    }
+    .empty-cart-img-container img {
+        height: 260px;
+    }
+
+    .shop-product-img.w-100 img {
+        height: 350px;
+    }
+
+    .shop-area {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+
+    .cpy-6 {
+        padding: 60px 0;
+    }
+
+    .service-details-img img {
+        height: 300px;
+    }
+
+    .service-details.pt-105.pb-60 {
+        padding-top: 65px;
+        padding-bottom: 15px;
+    }
+
+    .product-img img {
+        height: 300px;
+    }
+
+    .customer-1 .review-pagination {
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+
+    .postbox__thumb.w-img img {
+        height: 300px;
+    }
+
+    .postbox__content {
+        padding: 20px;
+        padding-top: 15px;
+    }
+
+    .post-details {
+        padding: 20px;
+    }
+
+    .post-img img {
+        height: 300px;
+    }
+    .ad-footer-subscribe {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    section.single-blog-section .blog-img img {
+        height: 350px;
+    }
+    .ad-footer-bottom {
+        padding: 15px 0;
+    }
+    .all-product-1 .product-details {
+        padding: 20px;
+    }
+
+    .banner-title.banner-title2 {
+        font-size: 50px;
+    }
+
+    /* quick view */
+    .single-product-quick-view {
+        height: 340px;
+    }
+
+    .quick-view-container {
+        height: 100%;
+    }
+
+    .quick-view-text-container {
+        padding: 10px;
+    }
+
+    .quick-view-text-container h3.product-title {
+        font-size: 18px;
+    }
+
+    .quick-view-price-range {
+        font-size: 16px;
+    }
+
+    .quick-view-product-infos p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .quick-view-product-action {
+        margin: 0;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .quick-view-product-details-quantity {
+        height: 37px;
+        line-height: 37px;
+    }
+
+    a.quick-view-btn {
+        line-height: 15px;
+    }
+
+    a.quick-view-wishlist-btn {
+        line-height: 15px;
+    }
+
+    /* quick view */
+
+    .delivery-area.delivery-area-3 .video-btn {
+        margin: 0;
+    }
+
+    .order-feature-area.pt-100.pb-70 {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+
+    .cb-category-area.bg-light-blue.pt-80.pb-80 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .cb-top-rated-restaurant.pt-100.pb-65 {
+        padding-top: 50px;
+        padding-bottom: 33px;
+    }
+
+    .cb-offer-cta.pt-105.pb-105.text-center.text-md-start {
+        padding: 60px 0;
+    }
+
+    .cb-team-area.pt-100.pb-65 {
+        padding-top: 50px;
+        padding-bottom: 33px;
+    }
+
+    .tabs .tab-links .item-link:nth-child(4):after {
+        background-color: transparent;
+    }
+
+    .tabs .tab-links .item-link:last-child:after {
+        background-color: transparent;
+    }
+    .ad-article-title-container p {
+        font-size: 12px;
+    }
+    .ad-description-text {
+        width: 70%;
+        font-size: 12px;
+    }
+    .ad-banner-img {
+        height: 360px;
+    }
+    .ad-about-image-container {
+        width: 100%;
+    }
+    .ad-banner-text-container {
+        padding-right: 15px;
+    }
+    .ad-description-text {
+        font-size: 12px;
+        width: 80%;
+    }
+    .ad-about-list-container p {
+        font-size: 16px;
+    }
+    .ad-chef-image img {
+        width: 190px;
+        max-width: unset;
+    }
+    .ad-about-text-container a {
+        font-size: 14px;
+    }
+    .ad-chef-image {
+        top: calc(0% - 30px);
+        left: calc(0% - 20px);
+    }
+    .ad-offer-bottom-container h5 {
+        font-size: 16px;
+    }
+    .ad-chef-container {
+        margin-top: 90px;
+    }
+    .ad-chef-custom-row {
+        row-gap: 50px;
+    }
+    .ad-reservation-form-container {
+        padding-top: 30px;
+    }
+    .ad-reservation-form input, .ad-reservation-form select {
+        font-size: 16px;
+    }
+    .ad-reservation-form i {
+        font-size: 18px;
+    }
+    .ad-reservation-single-content p span {
+        font-size: 20px;
+    }
+    .ad-reservation-single-content span {
+        font-size: 16px;
+    }
+    .ad-reservation-container {
+        flex-wrap: wrap;
+    }
+    .ad-reservation-line-shape.ad-reservation-second-line-shape {
+        display: none;
+    }
+    .ad-reservation-single-content {
+        gap: 10px;
+    }
+    .ad-reservation-line-shape {
+        padding: 0;
+    }
+    .ad-reservation-single-content img {
+        width: 35px;
+    }
+    .ad-single-review p {
+        font-size: 12px;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    .ad-review-person-container h4 {
+        font-size: 15px;
+    }
+    .ad-review-carousel {
+        left: 6%;
+        width: 90%;
+    }
+    .ad-offer-single-card {
+        padding: 0;
+    }
+    .ad-single-review i {
+        font-size: 18px;
+    }
+    .ad-review-person-container {
+        margin-top: 20px;
+    }
+    .ad-footer-subscribe {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .ad-footer-list h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .ad-footer-bottom p {
+        font-size: 15px;
+    }
+    .ad-about-image-container {
+        justify-content: flex-start;
+    }
+    .ad-offer-price {
+        font-size: 16px;
+    }
+    .ad-offer-responsive-dotted {
+        font-size: 12px;
+    }
+    .ad-offer-single-card h5 {
+        font-size: 14px;
+    }
+    .ad-reservation-container {
+        padding: 20px;
+        padding-top: 340px;
+        gap: 10px;
+    }
+    .ad-single-review {
+        padding-left: 15px;
+    }
+    .ad-single-card p {
+        margin-top: 20px;
+    }
+    .ad-footer-subscribe h4 {
+        font-size: 22px;
+    }
+    .ad-footer-subscribe button {
+        font-size: 18px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+        left: 55%;
+        top: 13%;
+    }
+    .container.ad-reservation-container.about-page-shop-details-container {
+        padding: 60px 0;
+    }
+    .ad-reservation-line-shape img {
+        width: 40px;
+    }
+    .ad-single-review {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .height-955 {
+        height: 780px;
+    }
+
+    .cb-item-info-img.pr-50 {
+        padding-right: 0;
+    }
+
+    .cb-item-info-img.pl-50 {
+        padding-left: 0;
+    }
+
+    .banner-bg.slider5-height {
+        height: 780px;
+    }
+
+    .hero-area4 {
+        background-size: cover;
+    }
+
+    .single-service-right-bar.pl-20 {
+        padding-left: 0;
+    }
+
+    .sidebar-default.pl-25 {
+        padding-left: 0;
+    }
+
+    .delivery {
+        background-size: cover;
+    }
+
+    .delivery-img img {
+        top: 0;
+    }
+
+    .about-3 .about-img {
+        padding-bottom: 10px;
+    }
+
+    .about-content.pl-50 {
+        padding-left: 0;
+    }
+
+    .about-3 .about-content {
+        padding-left: 0;
+    }
+
+    .about.about-2 .about-img {
+        padding-bottom: 10px;
+    }
+
+    .smpadright40 .footer-content-wrapper {
+        padding-right: 40px;
+    }
+
+    .padleft40 .footer-content-wrapper {
+        padding-left: 0px;
+    }
+
+    .delivery {
+        background-size: cover;
+    }
+
+    .about .h-100.pl-40 {
+        padding-left: 0;
+    }
+
+    ul.right-social-ul {
+        top: 15%;
+    }
+
+    ul.nav-menu {
+        display: block;
+        background: #ffffff;
+        height: 100vh;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 250px;
+        padding: 10px;
+        box-shadow: -2px 1px 20px 1px #00000024;
+        backdrop-filter: blur(3px);
+        transition: .3s;
+        z-index: 99;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .dp-menu {
+        width: 100%;
+    }
+
+    .close-menu {
+        display: flex;
+    }
+
+    #search {
+        display: none;
+    }
+
+    /* ===========banner========= */
+    .banner-title {
+        font-size: 46px;
+    }
+
+    .banner.banner-1 {
+        height: 560px;
+        padding-top: 100px;
+    }
+
+    .bannerSlider .swiper-wrapper {
+        padding: 15px 0;
+    }
+
+    /* =======app====== */
+    img.app-one {
+        display: none;
+    }
+
+    img.app-tow {
+        width: 90%;
+    }
+
+    .app-section.app-section-1 {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .bg-availa {
+        padding: 50px 0;
+    }
+
+    .availability {
+        margin-bottom: 105px;
+    }
+
+    .review {
+        padding: 25px;
+        padding-bottom: 40px;
+    }
+
+    .review p {
+        padding: 10px 0;
+    }
+
+    .right-menu-icon {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    ul.about-ul li {
+        width: 100%;
+    }
+
+    .subs-title {
+        font-size: 28px;
+    }
+
+    .btn-sec .custom-btn {
+        padding: 10px 20px;
+    }
+    .ad-footer-subscribe input {
+        width: 220px;
+        font-size: 16px;
+      }
+      .ad-video-container {
+        height: 250px;
+      }
+      .ad-about-section,
+    .home-6 .ad-service,
+    .ad-offer,
+    .ad-chef,
+    .ad-customer-review,
+    .ad-article,
+    .ad-menu-happy-ours,
+    .home-6.menu-page-2 .ad-offer.ad-menu-lunch,
+    .reservation-page-subscribe,
+    .reservation-page-video {
+        padding: 80px 0;
+    }
+    .ad-footer-subscribe {
+        padding: 40px 0;
+    }
+    .ad-footer-list-container {
+        padding: 50px 0;
+    }
+    span.ad-offer-price:before {
+        width: 300px;
+    }
+    .reservation-page-form {
+        padding: 60px 0;
+    }
+    .reservation-page-subscribe h5 {
+        font-size: 26px;
+    }
+    .reservation-page-subscribe p {
+        font-size: 16px;
+    }
+    .reservation-page-subscribe input {
+        width: 100%;
+    }
+    .reservation-page-subscribe-container {
+        text-align: center;
+    }
+    .reservation-page {
+        margin-top: 95px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero4-title {
+        font-size: 52px;
+    }
+
+    .cb-category-inner-text.pl-50 {
+        padding-left: 30px;
+    }
+
+    .cb-category-inner-slider-wrapper.pl-58 {
+        padding-left: 30px;
+    }
+
+    .hero-sub-title {
+        font-size: 20px;
+    }
+
+    .delivery {
+        background-position: center;
+        text-align: center;
+    }
+
+    .cb-team-single-name {
+        font-size: 20px;
+    }
+
+    .cb-offer-cta-content-subtitle {
+        font-size: 20px;
+    }
+
+    .cb-offer-image img {
+        max-width: 150px;
+    }
+
+    .cb-offer-cta-content-title {
+        font-size: 45px;
+    }
+
+    .cb-section-title {
+        font-size: 32px;
+    }
+
+    .about.about-1 .about-img {
+        padding-bottom: 20px;
+    }
+
+    .product-main-info .name {
+        font-size: 28px;
+    }
+
+    .blog-details-content {
+        padding: 40px 35px;
+    }
+
+    .signle-comment-title {
+        font-size: 20px;
+    }
+
+    .blog-details-title {
+        font-size: 28px;
+    }
+
+    .shop-notice-result {
+        margin-bottom: 10px;
+    }
+
+    .page-head {
+        font-size: 32px;
+    }
+
+    .team-about-details-wrapper.pl-30 {
+        padding-left: 0;
+    }
+
+    .banner-3 .banner-slider {
+        padding-top: 60px;
+    }
+
+    .sec-sm-title {
+        font-size: 18px;
+    }
+
+    .banner-1 .text-inner {
+        padding-top: 30px;
+    }
+
+    .call-sec-title {
+        font-size: 28px;
+    }
+
+    .pricing-card-sec {
+        margin-top: 10px;
+    }
+
+    .delivery-img {
+        display: none;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .sec-title {
+        font-size: 28px;
+    }
+
+    .available-head {
+        font-size: 28px;
+    }
+
+    .note-title {
+        font-size: 28px;
+    }
+
+    .app-title {
+        font-size: 28px;
+    }
+
+    .sm-title {
+        font-size: 18px;
+    }
+
+    .banner-1 .slider-item-img {
+        margin-top: 30px;
+    }
+
+    ul.right-social-ul {
+        top: 15%;
+    }
+
+    .banner-1 h1.banner-title {
+        font-size: 36px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .right-bar {
+        padding: 0;
+    }
+
+    .text-inner {
+        text-align: center;
+    }
+
+    .banner-btn-sec {
+        justify-content: center;
+    }
+
+    .app-img {
+        display: none;
+    }
+
+    .app-feature {
+        padding: 40px 30px;
+        padding-bottom: 45px;
+    }
+
+    .subscribe {
+        padding: 40px 0;
+    }
+
+    .review-title {
+        font-size: 22px
+    }
+
+    .pricing-card.active {
+        transform: scale(1);
+    }
+
+    .availability {
+        margin-top: 0;
+        margin-bottom: 325px;
+    }
+
+    .reply-comment {
+        margin-left: 0;
+    }
+
+    .single-comment {
+        display: flex;
+        align-items: initial;
+    }
+
+    img.cat-icon {
+        width: 50px;
+    }
+
+    .cat-name {
+        font-size: 15px;
+    }
+
+    .cat-menu-li {
+        margin: 0 5px;
+    }
+
+    .cat-menu-li {
+        padding: 5px 5px;
+    }
+
+    .describe {
+        padding: 70px 0;
+    }
+
+    .video-area {
+        padding-top: 60px;
+        height: 300px;
+    }
+
+    .delivery-area-3 .video-area {
+        height: 385px;
+        padding-top: 75px;
+    }
+
+    .form-wrapper {
+        margin-top: -150px;
+    }
+
+    .image-content {
+        margin-bottom: 0 !important;
+    }
+
+    .social-sec {
+        display: none;
+    }
+
+    .service-list {
+        margin-bottom: 0 !important;
+    }
+
+    .pricing-card-sec.cmy-5 {
+        margin-bottom: 0;
+    }
+
+    .m-mr-0 {
+        margin-bottom: 0;
+    }
+
+    .partner-bg {
+        padding: 45px 0;
+    }
+
+    .footer-section {
+        padding-top: 50px;
+    }
+
+    .last-footer {
+        margin-top: 40px;
+    }
+
+    .post-title {
+        font-size: 18px;
+    }
+    .row.ad-reservation-form {
+        margin: 25px 0;
+    }
+    .ad-video-container {
+        height: 200px;
+    }
+    span.ad-offer-price:before {
+        width: 160px;
+    }
+    .contact-page-form h4 {
+        font-size: 30px;
+    }
+    .contact-page-form p {
+        font-size: 16px;
+    }
+    .ad-reservation {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero-sub-title {
+        font-size: 18px;
+    }
+    .ad-footer-subscribe input {
+        width: 180px;
+    }
+    .cb-offer-cta-content {
+        padding: 0 15px;
+    }
+
+    .cb-offer-cta-content-subtitle {
+        font-size: 20px;
+    }
+
+    .cb-offer-cta-content-title {
+        font-size: 36px;
+    }
+
+    .hero-trending-wrap strong {
+        font-size: 16px;
+    }
+
+    .hero4-search {
+        width: calc(100%);
+    }
+
+    .height-955 {
+        height: 650px;
+    }
+
+    .banner-bg.slider5-height {
+        height: 650px;
+    }
+
+    .hero4-title {
+        font-size: 46px;
+    }
+
+    .smpadright40 .footer-content-wrapper {
+        padding-right: 0;
+    }
+
+    .postbox__title {
+        font-size: 20px;
+    }
+
+    .page-banner {
+        padding: 60px 0;
+    }
+
+    .page-head {
+        font-size: 32px;
+    }
+
+    .padright40 .footer-content-wrapper {
+        padding-right: 0;
+    }
+
+    .watch {
+        margin-left: 25px;
+    }
+    .ad-footer-list-container {
+        padding: 40px 0;
+    }
+
+    ul.about-ul {
+        display: block;
+    }
+
+    .post-title {
+        font-size: 20px;
+    }
+    .ad-chef-card {
+        width: 60%;
+    }
+    .ad-footer-subscribe  {
+        padding: 30px 0;
+    }
+    .ad-about-section,
+    .home-6 .ad-service,
+    .ad-offer,
+    .ad-chef,
+    .ad-customer-review,
+    .ad-article,
+    .ad-menu-happy-ours,
+    .home-6.menu-page-2 .ad-offer.ad-menu-lunch,
+    .reservation-page-subscribe,
+    .reservation-page-video {
+        padding: 60px 0;
+    }
+    .ad-reservation {
+        margin-top: 130px;
+    }
+    .row.ad-reservation-form {
+        margin: 10px 0;
+    }
+    .ad-chef-single-card {
+        width: 230px;
+    }
+    .ad-chef-single-card h4 {
+        padding-top: 230px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text img {
+        width: 120px;
+    }
+    .ad-footer-subscribe {
+        padding: 30px 0;
+    }
+    .ad-footer-list-container {
+        padding: 40px 0;
+    }
+    .ad-menu-qr-code {
+        margin-top: 80px;
+    }
+    .ad-offer-responsive-dotted {
+        display: none;
+    }
+    span.ad-offer-price:before {
+        width: 220px;
+    }
+    .reservation-page {
+        margin-top: 75px;
+    }
+    .reservation-page-subscribe p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cb-category-inner-text.pl-50 {
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: center;
+    }
+
+    .cb-category-inner-slider-wrapper.pl-58 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .coupon-form {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .sign-about img {
+        max-width: 145px;
+    }
+
+    .blog-details-content {
+        padding: 40px 25px;
+    }
+
+    .coupon-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-sec .custom-btn {
+        padding: 10px 20px;
+    }
+
+    .describe {
+        padding: 50px 0;
+    }
+
+    .service-des {
+        margin-bottom: 0 !important;
+    }
+    .reservation-page{
+        height: 640px;
+        padding-top: 60px;
+    }
+    .reservation-page-title-container p {
+        font-size: 14px;
+    }
+    .reservation-page-subscribe h5 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .about-page-cup {
+      width: 50px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+      top: 6%;
+      left: 54%;
+    }
+    .about-page-bottom-image {
+      top: 56%;
+    }
+  
+    .about-page-discount-text-container p {
+      font-size: 14px;
+    }
+  
+    .about-page-discount-text-container h4 {
+      font-size: 25px;
+    }
+  
+    .about-page-discount-text-container button {
+      margin-top: 10px;
+      width: 95px;
+      font-size: 12px;
+      height: 35px;
+    }
+    .container.ad-reservation-container.about-page-shop-details-container {
+        padding: 40px;
+    }
+    .about-page-discount-image img {
+        height: 180px;
+    }
+    .ad-about-rounded-text.about-page-rounded-text img {
+        width: 100px;
+    }
+    .about-page-cup {
+        top: 16%;
+        left: 61%;
+    }
+    .reservation-page-subscribe p {
+        font-size: 12px;
+    }
+    .reservation-nav-btn {
+        font-size: 25px;
+    }
+  }
+  
+@media screen and (max-width:400px) {
+    .hero4-title {
+        font-size: 36px;
+    }
+
+    .cb-offer-cta-content {
+        padding: 0;
+    }
+
+    .cb-section-title {
+        font-size: 28px;
+    }
+
+    .order-feature-title {
+        font-size: 20px;
+    }
+
+    .cb-top-restaurant-title {
+        font-size: 20px;
+    }
+
+    .cb-team-single-name {
+        font-size: 20px;
+    }
+
+    .home4-blog .post-title {
+        font-size: 20px;
+    }
+
+    .hero4-search {
+        width: 100%;
+    }
+
+    .banner-bg {
+        padding: 10px;
+    }
+
+    .side-info {
+        padding: 40px 30px;
+    }
+
+    .banner .custom-btn {
+        padding: 10px 15px;
+    }
+
+    .cart-menu {
+        right: 12px;
+        width: auto;
+        left: 12px;
+    }
+
+    .nav-list {
+        position: initial;
+    }
+
+    .commenter-name {
+        font-size: inherit;
+    }
+
+    .delivery-area.delivery-area-3 .video-btn {
+        margin: 0;
+    }
+
+    .commenter-img img {
+        width: 50px;
+    }
+
+    .delivery {
+        height: auto;
+        display: block;
+        padding: 30px 25px;
+        padding-bottom: 35px;
+    }
+
+    .store img {
+        width: 110px;
+        margin: 5px;
+    }
+
+    .footer-link img {
+        height: 90px;
+    }
+
+    .all-product-1 .product-details {
+        padding: 20px;
+    }
+
+    .customer-1 .review-pagination {
+        margin-bottom: 35px;
+        margin-left: 5px;
+    }
+
+    .banner-title.banner-title2 {
+        font-size: 50px;
+    }
+
+    /* quick view */
+    .single-product-quick-view {
+        height: 360px;
+    }
+
+    .quick-view-container {
+        height: 100%;
+    }
+
+    .quick-view-text-container {
+        padding: 10px;
+    }
+
+    .quick-view-text-container h3.product-title {
+        font-size: 16px;
+    }
+
+    .quick-view-price-range {
+        font-size: 14px;
+    }
+
+    .quick-view-product-infos p {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    .quick-view-product-action {
+        margin: 0;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    .quick-view-product-details-quantity {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    a.quick-view-btn {
+        line-height: 10px;
+    }
+
+    a.quick-view-wishlist-btn {
+        line-height: 10px;
+    }
+
+    /* quick view */
+    .cpy-8 {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .cpy-6 {
+        padding: 55px 0;
+    }
+
+    .order-feature-area {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+
+    .cb-category-area.bg-light-blue {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    .cb-top-rated-restaurant {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .cb-team-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .cb-slide-price {
+        font-size: 18px;
+    }
+
+    .team {
+        padding-top: 50px;
+    }
+
+    .cmb-7 {
+        margin-bottom: 40px;
+    }
+
+    .postbox__content {
+        padding: 15px;
+        padding-top: 10px;
+    }
+
+    .postbox__thumb.w-img img {
+        height: 300px;
+    }
+
+    section.single-blog-section .blog-img img {
+        height: 300px;
+    }
+
+    .blog-details-title {
+        font-size: 20px;
+    }
+
+    .blog-inner-title {
+        font-size: 20px;
+    }
+
+    .faq__ans {
+        padding: 12px 15px;
+    }
+
+    .faq__que {
+        padding: 12px 15px;
+    }
+
+    .sec-title {
+        font-size: 24px;
+    }
+
+    .service-details-img img {
+        height: 250px;
+    }
+
+    .service-heding {
+        font-size: 22px;
+    }
+
+    .shop-area {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    .product-main-info.mb-50 {
+        margin-bottom: 20px;
+    }
+
+    .rating-div p {
+        margin-bottom: 0;
+    }
+
+    ul.rating {
+        margin-bottom: 0;
+    }
+
+    .product-main-info .name {
+        font-size: 24px;
+    }
+
+    .empty-cart-img-container img {
+        height: 250px;
+    }
+
+    .shopping-btn .custom-btn {
+        padding: 10px 15px;
+    }
+
+    .page-head {
+        font-size: 28px;
+    }
+
+    .tabs .tab-links .item-link:nth-child(3):after {
+        background-color: transparent;
+    }
+
+    .tabs .tab-links .item-link:last-child:after {
+        background-color: transparent;
+    }
+    .ad-article-title-container p {
+        font-size: 12px;
+    }
+    .ad-description-text {
+        width: 70%;
+        font-size: 12px;
+    }
+    .ad-banner-img {
+        height: 360px;
+    }
+    .ad-about-image-container {
+        width: 100%;
+    }
+    .ad-description-text {
+        font-size: 12px;
+        width: 90%;
+    }
+    .ad-about-list-container p {
+        font-size: 14px;
+    }
+    .ad-video-container img {
+        height: 150px;
+    }
+    .ad-chef-image img {
+        width: 190px;
+        max-width: unset;
+    }
+    .ad-about-text-container a {
+        font-size: 14px;
+    }
+    .ad-chef-image {
+        top: calc(0% - 30px);
+        left: calc(0% - 20px);
+    }
+    .ad-offer-bottom-container h5 {
+        font-size: 16px;
+    }
+    .ad-chef-container {
+        margin-top: 90px;
+    }
+    .ad-chef-custom-row {
+        row-gap: 50px;
+    }
+    .ad-reservation-form-container {
+        padding-top: 30px;
+    }
+    .ad-reservation-form input, .ad-reservation-form select {
+        font-size: 16px;
+    }
+    .ad-reservation-form i {
+        font-size: 18px;
+        margin: auto;
+    }
+    .ad-reservation-single-content p span {
+        font-size: 18px;
+    }
+    .ad-reservation-single-content span {
+        font-size: 14px;
+    }
+    .ad-reservation-container {
+        flex-wrap: wrap;
+    }
+    .ad-reservation-line-shape.ad-reservation-second-line-shape {
+        display: none;
+    }
+    .ad-reservation-single-content {
+        gap: 10px;
+    }
+    .ad-reservation-line-shape {
+        padding: 0 10px;
+    }
+    .ad-reservation-single-content img {
+        width: 35px;
+    }
+    .ad-single-review p {
+        font-size: 10px;
+        margin-top: 15px;
+        line-height: 1.5;
+    }
+    .ad-review-person-container h4 {
+        font-size: 12px;
+    }
+    .ad-review-person-container span {
+        font-size: 10px;    
+    }
+    .ad-review-carousel {
+        left: 6%;
+        width: 90%;
+    }
+    .ad-offer-single-card {
+        padding: 0;
+    }
+    .ad-single-review i {
+        font-size: 16px;
+    }
+    .ad-review-person-container {
+        margin-top: 15px;
+    }
+    .ad-footer-subscribe {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .ad-footer-list h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .ad-footer-bottom p {
+        font-size: 15px;
+    }
+    .ad-about-image-container {
+        justify-content: flex-start;
+    }
+    .ad-offer-price {
+        font-size: 16px;
+    }
+    .ad-offer-responsive-dotted {
+        font-size: 12px;
+    }
+    .ad-offer-single-card h5 {
+        font-size: 14px;
+    }
+    .ad-reservation-container {
+        padding: 20px;
+        padding-top: 340px;
+        gap: 10px;
+    }
+    .ad-single-review {
+        padding-left: 15px;
+    }
+    .ad-single-card p {
+        margin-top: 20px;
+    }
+    .ad-footer-subscribe h4 {
+        font-size: 18px;
+    }
+    .ad-footer-subscribe button {
+        font-size: 18px;
+    }
+    .ad-carousel-prev-btn {
+        top: 55%;
+        left: 37%;
+    }
+  
+    .ad-carousel-next-btn {
+        top: 55%;
+        left: 48%;
+    }
+    .ad-banner-text-container {
+        margin-left: 60px;
+        width: 250px;
+        padding-right: 10px;
+    }
+    .ad-title-text {
+        font-size: 16px;
+    }
+    .ad-single-service.position-relative br{
+        display: none;
+    }
+    .ad-single-service p {
+        font-size: 12px;
+    }
+    .ad-offer-single-card {
+        gap: 15px;
+        align-items: start;
+    }
+    .ad-offer-tab-container {
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .ad-offer-img-container {
+        height: auto;
+    }
+    .ad-chef-card {
+        width: 70%;
+    }
+    .row.ad-reservation-form {
+        margin: 0;
+    }
+    .about-page-cup {
+        top: 14%;
+        left: 76%;
+    }
+    .ad-about-rounded-text.about-page-rounded-text {
+        top: 4%;
+        left: 68%;
+    }
+    .about-page-discount {
+        padding: 30px 20px;
+    }
+    .about-page-discount-text-container h4 {
+        font-size: 22px;
+    }
+    .ad-menu-qr-code-container p {
+        font-size: 16px;
+    }
+    span.ad-offer-price:before {
+        width: 20px;
+    }
+    .ad-offer-single-card img {
+        height: 50px;
+        width: 50px;
+    }
+    .reservation-page-subscribe h5 {
+        font-size: 18px;
+    }   
+    .reservation-page-subscribe-input-container {
+        flex-direction: column;
+        row-gap: 15px;
+    } 
+    .reservation-page-subscribe input::placeholder {
+        text-align: center;
+        font-size: 14px;
+    }
+    .reservation-page-subscribe {
+        margin-top: 370px;
+    }
+    .reservation-page-video-prev-btn, .reservation-page-video-next-btn {
+        height: 30px;
+        width: 30px;
+    }
+    .reservation-page-video-btn-container {
+        width: 30%;
+        height: 30%;
+    }
+    .reservation-nav-btn {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .contact-page-single-office h5 {
+        font-size: 18px;
+    }
+    .contact-page-single-office p {
+        font-size: 18px;
+    }
+    .contact-page-single-office span {
+        font-size: 14px;
+    }
+}
