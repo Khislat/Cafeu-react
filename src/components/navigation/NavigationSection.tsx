@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const NavigationSection = () => {
-	const authMember = null;
+	const authMember = true;
 
 	return (
 		<nav className="cf-header-menu" id="header-menu">
@@ -21,11 +23,18 @@ const NavigationSection = () => {
 						<NavLink to="/blog-grid">Blog</NavLink>
 					</li>
 					<li>
-						<NavLink to="/cart">Cart</NavLink>
+						<NavLink to="/cart">
+							{/* <ShoppingCartIcon /> */}
+							Cart
+						</NavLink>
 					</li>
-
 					<li>
-						<NavLink to="/my-account">Login</NavLink>
+						<NavLink to="/faq">FAQ</NavLink>
+					</li>
+					<li>
+						<NavLink to="/userpage">
+							<AccountCircleIcon fontSize="large" />
+						</NavLink>
 					</li>
 				</ul>
 			) : (
@@ -42,11 +51,10 @@ const NavigationSection = () => {
 					</li>
 
 					<li>
-						<NavLink to="/signup">Signup</NavLink>
+						<NavLink to="/faq">FAQ</NavLink>
 					</li>
-					
 					<li>
-						<NavLink to="/my-account">Login</NavLink>
+						<NavLink to="/my-account">Register</NavLink>
 					</li>
 				</ul>
 			)}

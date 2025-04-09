@@ -1,11 +1,12 @@
-import BreadcrumbSection from "../components/breadcrumb/BreadcrumbSection";
+
+import BreadcrumbSectionLogin from "../components/breadcrumb/BreadcrumbSectionLogin";
 import Layout from "../components/layout/Layout";
 import LoginSection from "../components/login/LoginSection";
 
 const MyAccountPage = () => {
 	return (
 		<Layout>
-			<BreadcrumbSection title="Login" header="My account" />
+			<BreadcrumbSectionLogin header="My account" title={""} />
 			<LoginSection />
 		</Layout>
 	);

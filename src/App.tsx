@@ -10,8 +10,7 @@ import PricingPage from "./pages/PricingPage";
 import ShopPage from "./pages/ShopPage";
 import ShopDetailsPage from "./pages/ShopDetailsPage";
 import SignupPage from "./pages/SignupPage";
-
-
+import UserPage from "./pages/UserPage";
 
 function App() {
 	return (
@@ -25,10 +24,10 @@ function App() {
 				<Route path="/menu" element={<MenuPage1 />} />
 				<Route path="/my-account" element={<MyAccountPage />} />
 				<Route path="/signup" element={<SignupPage />} />
+				<Route path="/userpage" element={<UserPage />} />
 				<Route path="/pricing" element={<PricingPage />} />
 				<Route path="/shop" element={<ShopPage />} />
 				<Route path="/shop/:shopSlug" element={<ShopDetailsPage />} />
-				
 			</Routes>
 		</Router>
 	);

@@ -29,14 +29,18 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
                 <NavigationSection />
               </div>
               <div className="header-right-search-phone d-none d-lg-block ml-35">
+            
                 <a
                   className="header-search"
                   id="search"
                   role="button"
                   onClick={openSearchbarModal}
+                  
                 >
+                  
                   <span className="icofont-search-1"></span>
                 </a>
+                
                 <Link to="tel:+821021455662" className="header-phone">
                   <img
                     src="/img/icon/call.png"
@@ -45,7 +49,10 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
                   />{" "}
                   +(82) 10-2145-5662
                 </Link>
+                
               </div>
+             
+             
               <div className="d-lg-none dr-navbar-mobile-sign side-toggle">
                 <div
                   className="dr-navbar-sign menu-tab"
@@ -57,6 +64,7 @@ const Header: React.FC<HeaderProps> = ({ style }) => {
                   <span className="dr-line-3"></span>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

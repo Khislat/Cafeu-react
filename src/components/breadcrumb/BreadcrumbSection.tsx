@@ -16,7 +16,7 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
             <h1
               className="page-head"
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="1000" 
             >
               {header}
             </h1>
