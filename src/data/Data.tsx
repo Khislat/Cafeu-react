@@ -200,7 +200,7 @@ const blogDataList = [
     title: "New Restaurant Town Our Ple Award Contract",
     slug: "new-restaurant-town-our-ple-award-contract",
     desc: "Drive your business and manage risks with a global industry leader.",
-    date: "Aug 1, 2023",
+    date: "May 1, 2025",
     longDesc:
       "Cuisine is a universal language, speaking to our senses and heritage. Each dish is a story, a blend of history and flavor that we share. Discovering diverse culinary traditions is an exploration of cultures, connecting us on a deeper level.",
     category: "Restaurant",
@@ -211,7 +211,7 @@ const blogDataList = [
     title: "Greek yogurt breakfast bowls Ple Award Contract",
     slug: "greek-yogurt-breakfast-bowls-ple-award-contract",
     desc: "Drive your business and manage risks with a global industry leader.",
-    date: "Jun 14, 2023",
+    date: "Jun 14, 2025",
     longDesc:
       "Food, a universal pleasure, unites us across borders. Culinary diversity celebrates our world's richness. From spicy curries to delicate pastries, every bite tells a tale. To savor this bounty, let's embrace sustainability, safeguarding our planet and nourishing our souls.",
     category: "Breakfast",
@@ -222,7 +222,7 @@ const blogDataList = [
     title: "Make Authentic Italian Margherita Pizza at Home",
     slug: "make-authentic-italian-margherita-pizza-at-home",
     desc: "Drive your business and manage risks with a global industry leader.",
-    date: "Sep 5, 2023",
+    date: "Jan 5, 2025",
     longDesc:
       "Nourishing our bodies and souls, food transcends borders. Culinary traditions tell stories of culture and history, creating bridges between people. Yet, with this delight comes responsibility. Choosing sustainable and healthy options ensures a brighter future for ourselves and the planet.",
     category: "Pizza",
@@ -233,7 +233,7 @@ const blogDataList = [
     title: "Exploring New Food Trends in 2023",
     slug: "exploring-new-food-trends-in-2023",
     desc: "Discover the latest food trends shaping the culinary world.",
-    date: "Jan 15, 2023",
+    date: "Jan 15, 2025",
     longDesc:
       "Food is a fundamental aspect of human existence, nourishing our bodies and satisfying our taste buds. It's not merely sustenance but a cultural, social, and emotional experience. Different cuisines worldwide reflect diverse traditions and histories, offering a rich tapestry of flavors and textures. Exploring food can be a delightful adventure, connecting people and bridging cultural gaps. However, it's essential to consider the sustainability and health aspects of our food choices to ensure a better future for both us and the planet.",
     category: "Trends",
@@ -244,7 +244,7 @@ const blogDataList = [
     title: "Healthy Breakfast Recipes for a Great Start",
     slug: "healthy-breakfast-recipes-for-a-great-start",
     desc: "Explore delicious and nutritious breakfast options.",
-    date: "Mar 22, 2023",
+    date: "Mar 22, 2025",
     longDesc:
       "Food, a global tapestry of flavors, is a testament to our rich cultural heritage. Each bite carries the essence of tradition and history, connecting us through our shared love for cuisine. Prioritizing sustainable and nutritious choices is key to preserving our culinary legacy.",
     category: "Breakfast",
@@ -255,7 +255,7 @@ const blogDataList = [
     title: "The Art of Crafting Homemade Pasta",
     slug: "the-art-of-crafting-homemade-pasta",
     desc: "Learn how to make authentic Italian pasta from scratch.",
-    date: "May 9, 2023",
+    date: "May 9, 2025",
     longDesc:
       "From street food to fine dining, food is an expression of culture. It's a shared experience that connects us globally. Diverse cuisines reflect our history and values. As we indulge, let's also make mindful choices that protect the environment and our well-being.",
     category: "Italian",
@@ -266,7 +266,7 @@ const blogDataList = [
     title: "Mastering the Art of Sushi Making",
     slug: "mastering-the-art-of-sushi-making",
     desc: "Discover the secrets of creating perfect sushi at home.",
-    date: "Jul 28, 2023",
+    date: "May 28, 2025",
     longDesc:
       "Our world's culinary mosaic tells a tale of tradition, innovation, and unity. Every dish we enjoy is a window into the culture and history of its origin. While we explore these flavors, let's also honor the planet by making sustainable and health-conscious food choices.",
     category: "Sushi",
@@ -277,7 +277,7 @@ const blogDataList = [
     title: "Culinary Skills with Cake Decorating",
     slug: "advanced-cake-decorating",
     desc: "Discover the secrets of creating perfect sushi at home.",
-    date: "Jul 28, 2023",
+    date: "Mar 28, 2025",
     longDesc:
       "Our world's culinary mosaic tells a tale of tradition, innovation, and unity. Every dish we enjoy is a window into the culture and history of its origin. While we explore these flavors, let's also honor the planet by making sustainable and health-conscious food choices.",
     category: "Sushi",
@@ -288,7 +288,7 @@ const blogDataList = [
     title: "The Craftsmanship of Handcrafted Pasta",
     slug: "handcrafted-pasta-masterclass",
     desc: "Discover the secrets of creating perfect sushi at home.",
-    date: "Jul 28, 2023",
+    date: "Jan 28, 2025",
     longDesc:
       "Our world's culinary mosaic tells a tale of tradition, innovation, and unity. Every dish we enjoy is a window into the culture and history of its origin. While we explore these flavors, let's also honor the planet by making sustainable and health-conscious food choices.",
     category: "Sushi",
@@ -299,7 +299,7 @@ const blogDataList = [
     title: "Master Crafting Exquisite Cocktails",
     slug: "exquisite-cocktail-crafting",
     desc: "Discover the secrets of creating perfect sushi at home.",
-    date: "Jul 28, 2023",
+    date: "Mar 28, 2025",
     longDesc:
       "Our world's culinary mosaic tells a tale of tradition, innovation, and unity. Every dish we enjoy is a window into the culture and history of its origin. While we explore these flavors, let's also honor the planet by making sustainable and health-conscious food choices.",
     category: "Sushi",

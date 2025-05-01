@@ -68,55 +68,57 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 				ncididunt ut abore et dolore magna aliqua. Quis ipsum pendisse ultrices
 				gravida.
 			</p>
-      {authMember ? (	<div className="size-qty">
-				<div className="mb-3 select-box">
-					<label htmlFor="exampleFormControlInput1" className="form-label">
-						Size
-					</label>
-					<Form.Select className="wide">
-						<option data-display="Select">Select</option>
-						<option value="1">L</option>
-						<option value="2">X</option>
-						<option value="3">XL</option>
-						<option value="4">XXL</option>
-						<option value="5">XXXL</option>
-					</Form.Select>
+			{authMember ? (
+				<div className="size-qty">
+					<div className="mb-3 select-box">
+						<label htmlFor="exampleFormControlInput1" className="form-label">
+							Size
+						</label>
+						<Form.Select className="wide">
+							<option data-display="Select">Select</option>
+							<option value="1">SMALL</option>
+							<option value="2">NORMAL</option>
+							<option value="3">LARGE</option>
+							<option value="4">SET</option>
+						</Form.Select>
+					</div>
+					<div className="mb-3 select-box">
+						<label htmlFor="exampleFormControlInput1" className="form-label">
+							QTY
+						</label>
+						<Form.Select
+							className="wide"
+							onChange={handleQuantityChange}
+							value={quantity ?? ""}>
+							<option data-display="Select">Select</option>
+							<option value={1}>1</option>
+							<option value={2}>2</option>
+							<option value={3}>3</option>
+							<option value={4}>4</option>
+							<option value={5}>5</option>
+						</Form.Select>
+					</div>
 				</div>
-				<div className="mb-3 select-box">
-					<label htmlFor="exampleFormControlInput1" className="form-label">
-						QTY
-					</label>
-					<Form.Select
-						className="wide"
-						onChange={handleQuantityChange}
-						value={quantity ?? ""}>
-						<option data-display="Select">Select</option>
-						<option value={1}>1</option>
-						<option value={2}>2</option>
-						<option value={3}>3</option>
-						<option value={4}>4</option>
-						<option value={5}>5</option>
-					</Form.Select>
+			) : null}
+
+			{authMember ? (
+				<div className="cart-sec">
+					<div className="btn-sec">
+						<a
+							className="custom-btn"
+							role="button"
+							onClick={() => addToCartWithQuantity(shopData.id, quantity)}>
+							Add To Cart
+						</a>
+						<a
+							className="custom-btn"
+							role="button"
+							onClick={() => addToWishlist(shopData.id)}>
+							Add To Wishlist
+						</a>
+					</div>
 				</div>
-			</div> ): null}
-		
-      {authMember ? (	<div className="cart-sec">
-				<div className="btn-sec">
-					<a
-						className="custom-btn"
-						role="button"
-						onClick={() => addToCartWithQuantity(shopData.id, quantity)}>
-						Add To Cart
-					</a>
-					<a
-						className="custom-btn"
-						role="button"
-						onClick={() => addToWishlist(shopData.id)}>
-						Add To Wishlist
-					</a>
-				</div>
-			</div>) : null}
-		
+			) : null}
 
 			<div className="share-link">
 				<p>Share Link</p>

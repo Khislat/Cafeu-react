@@ -6,7 +6,7 @@ import LoginSection from "../components/login/LoginSection";
 const MyAccountPage = () => {
 	return (
 		<Layout>
-			<BreadcrumbSectionLogin header="My account" title={""} />
+			<BreadcrumbSectionLogin header="Login" title={""} />
 			<LoginSection />
 		</Layout>
 	);

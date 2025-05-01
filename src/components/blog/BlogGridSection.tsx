@@ -26,19 +26,19 @@ const BlogGridSection = () => {
               >
                 <div className="post-card">
                   <div className="post-img">
-                    <a href={`/blog/${item.slug}`}>
+                    <a href="">
                       <img src={item.imgSrc} alt={item.title} />
                     </a>
                   </div>
                   <div className="post-details">
-                    <a href={`/blog/${item.slug}`} className="post-title">
+                    <a href="" className="post-title">
                       {item.title}
                     </a>
                     <p className="post-des">{item.desc}</p>
 
                     <div className="date-view">
                       <p className="date">{item.date} - Comments</p>
-                      <a href={`/blog/${item.slug}`} className="view-more">
+                      <a href="" className="view-more">
                         Read More
                       </a>
                     </div>

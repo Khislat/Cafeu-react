@@ -6,7 +6,7 @@ import SignupSection from "../components/signup/SignupSection";
 const SignupPage = () => {
 	return (
 		<Layout>
-			<BreadcrumbSectionSignup title={""} header="My account" />
+			<BreadcrumbSectionSignup title={""} header="Signup" />
 			<SignupSection />
 		</Layout>
 	);

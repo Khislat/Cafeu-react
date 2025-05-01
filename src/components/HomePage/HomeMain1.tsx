@@ -13,6 +13,7 @@ import FooterSection from "../footer/FooterSection";
 import SidebarSection from "../sidebar/SidebarSection";
 
 
+
 const HomeMain1 = () => {
 	return (
 		<div className="body-wrapper">
@@ -28,6 +29,7 @@ const HomeMain1 = () => {
 			<TeamSection />
 			<CustomerSection />
 			<BlogSection style="" />
+			
 			<FooterSection style="footer-1" />
 		</div>
 	);

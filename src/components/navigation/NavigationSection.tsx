@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import Basket from "../HomePage/Basket";
 // import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const NavigationSection = () => {
-	const authMember = true;
+	const authMember = null;
 
 	return (
 		<nav className="cf-header-menu" id="header-menu">
@@ -18,24 +19,29 @@ const NavigationSection = () => {
 					<li>
 						<NavLink to="/shop">Shop</NavLink>
 					</li>
+					<li>
+						<NavLink to="/cart">
+							{/* <ShoppingCartIcon /> */}
+							Orders
+						</NavLink>
+					</li>
 
 					<li>
 						<NavLink to="/blog-grid">Blog</NavLink>
 					</li>
-					<li>
-						<NavLink to="/cart">
-							{/* <ShoppingCartIcon /> */}
-							Cart
-						</NavLink>
-					</li>
+
 					<li>
 						<NavLink to="/faq">FAQ</NavLink>
+					</li>
+					<li>
+						<Basket />
 					</li>
 					<li>
 						<NavLink to="/userpage">
 							<AccountCircleIcon fontSize="large" />
 						</NavLink>
 					</li>
+					
 				</ul>
 			) : (
 				<ul>
@@ -55,6 +61,9 @@ const NavigationSection = () => {
 					</li>
 					<li>
 						<NavLink to="/my-account">Register</NavLink>
+					</li>
+					<li>
+						<Basket />
 					</li>
 				</ul>
 			)}

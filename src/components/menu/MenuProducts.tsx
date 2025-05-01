@@ -136,41 +136,41 @@ const MenuProducts: React.FC<MenuProps> = ({
 													</ul>
 													<p className="price">{item.priceRange}</p>
 
-
-													{authMember ? (<ul className="pd-btn-group">
-														<li>
-															<a
-																role="button"
-																onClick={() => addToWishlist(item.id)}
-																className={`shop-btn ${
-																	wishlist.some(
-																		(wishlistItem) =>
-																			wishlistItem.id === item.id
-																	)
-																		? "active"
-																		: ""
-																}`}>
-																<span className="icofont-heart-alt"></span>
-															</a>
-														</li>
-														<li>
-															<a
-																className="shop-btn"
-																role="button"
-																onClick={() => addToCart(item.id)}>
-																<span className="icofont-shopping-cart"></span>
-															</a>
-														</li>
-														<li>
-															<a
-																className="shop-btn"
-																role="button"
-																onClick={() => openLightBoxModal(item)}>
-																<span className="icofont-eye"></span>
-															</a>
-														</li>
-													</ul>) : null}
-													
+													{authMember ? (
+														<ul className="pd-btn-group">
+															<li>
+																<a
+																	role="button"
+																	onClick={() => addToWishlist(item.id)}
+																	className={`shop-btn ${
+																		wishlist.some(
+																			(wishlistItem) =>
+																				wishlistItem.id === item.id
+																		)
+																			? "active"
+																			: ""
+																	}`}>
+																	<span className="icofont-heart-alt"></span>
+																</a>
+															</li>
+															<li>
+																<a
+																	className="shop-btn"
+																	role="button"
+																	onClick={() => addToCart(item.id)}>
+																	<span className="icofont-shopping-cart"></span>
+																</a>
+															</li>
+															<li>
+																<a
+																	className="shop-btn"
+																	role="button"
+																	onClick={() => openLightBoxModal(item)}>
+																	<span className="icofont-eye"></span>
+																</a>
+															</li>
+														</ul>
+													) : null}
 												</div>
 											</div>
 										</div>
@@ -188,7 +188,6 @@ const MenuProducts: React.FC<MenuProps> = ({
 												Show More
 											</a>
 										) : menuProductItems.length > 8 ? (
-											
 											<a
 												className="custom-btn"
 												role="button"
@@ -198,7 +197,6 @@ const MenuProducts: React.FC<MenuProps> = ({
 										) : (
 											<></>
 										)}
-										
 									</div>
 								</div>
 							)}
