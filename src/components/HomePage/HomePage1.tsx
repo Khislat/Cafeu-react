@@ -1,16 +1,17 @@
 import Header from "./Header";
-import HomeMain1 from "./HomeMain1";
+import HomeMain from "./HomeMain1";
+
 import SearchModal from "./SearchModal";
 import VideoModal from "./VideoModal";
 
-const HomePage1 = () => {
+const HomePage = () => {
 	return (
 		<div className="wrapper">
 			<Header style={"header-1"} />
-			<HomeMain1 />
+			<HomeMain />
 			<VideoModal />
 			<SearchModal style="default" />
 		</div>
 	);
 };
-export default HomePage1;
+export default HomePage;

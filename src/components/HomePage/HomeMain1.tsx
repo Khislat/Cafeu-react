@@ -14,7 +14,7 @@ import SidebarSection from "../sidebar/SidebarSection";
 
 
 
-const HomeMain1 = () => {
+const HomeMain = () => {
 	return (
 		<div className="body-wrapper">
 			<BannerSection theme="banner-1" startIndex={0} endIndex={3} />
@@ -35,4 +35,4 @@ const HomeMain1 = () => {
 	);
 };
 
-export default HomeMain1;
+export default HomeMain;

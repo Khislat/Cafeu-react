@@ -8,6 +8,6 @@ export interface AppRootState {
 }
 
 export interface HomePageState {
-    specialMenu: Product[];
+    specialDishes: Product[];
     topUsers: Member[]
 }

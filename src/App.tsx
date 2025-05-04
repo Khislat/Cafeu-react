@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage1 from "./components/HomePage/HomePage1";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import BlogGridPage from "./pages/BlogGridPage";
 import CartPage from "./pages/CartPage";
@@ -12,12 +11,13 @@ import ShopDetailsPage from "./pages/ShopDetailsPage";
 import SignupPage from "./pages/SignupPage";
 import UserPage from "./pages/UserPage";
 import OrdersPage from "./components/oredersPage";
+import HomePage from "./components/HomePage/HomePage1";
 
 function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<HomePage1 />} />
+				<Route path="/" element={<HomePage />} />
 				<Route path="/blog/:blogSlug" element={<BlogDetailsPage />} />
 				<Route path="/blog-grid" element={<BlogGridPage />} />
 				<Route path="/cart" element={<CartPage />} />
