@@ -14,9 +14,9 @@ Don't forgot your feedback or ratings.
 
 /* ======all font use====== */
 
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Jost&family=Nunito&family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Jost&family=Nunito&family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans&display=swap');
 
 * {
 	padding: 0;
@@ -27,7 +27,7 @@ Don't forgot your feedback or ratings.
 /* ====end CSS Variable=== */
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #666666;
 	font-size: 15px;
 	line-height: 25px;
@@ -47,7 +47,7 @@ h6 {
 }
 
 p {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	line-height: 25px;
 	margin-bottom: 15px;
@@ -428,7 +428,7 @@ ul.right-social-ul li {
 
 .banner-1 .text-inner .sm-title {
 	font-size: 20px;
-	font-family: "Lobster Two", cursive;
+	font-family: 'Lobster Two', cursive;
 	color: #cc3333;
 	line-height: 1;
 }
@@ -484,9 +484,7 @@ ul.right-social-ul li {
 	opacity: 0.2;
 }
 
-.banner.banner-1
-	.banner-pagination
-	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.banner.banner-1 .banner-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	opacity: 1;
 	background: #cc3333;
 }
@@ -559,7 +557,7 @@ ul.right-social-ul li {
 
 .discover-bt:before,
 .discover-bt::after {
-	content: "";
+	content: '';
 	width: 5px;
 	height: 5px;
 	background: #666666;
@@ -589,12 +587,12 @@ ul.right-social-ul li {
 }
 
 .feature-card:hover .discover-bt:before {
-	content: "";
+	content: '';
 	background: #fce0c7;
 }
 
 .feature-card:hover .discover-bt::after {
-	content: "";
+	content: '';
 	background: #fce0c7;
 }
 
@@ -726,7 +724,7 @@ img.cat-icon {
 
 .cat-name {
 	font-size: 20px;
-	font-family: "Lobster Two", cursive;
+	font-family: 'Lobster Two', cursive;
 	transition: 0.3s;
 }
 
@@ -771,6 +769,7 @@ img.cat-icon {
 
 .all-product-1 .product-img img {
 	width: 100%;
+	height: 340px;
 }
 
 .all-product-1 .product-card {
@@ -1014,7 +1013,7 @@ img.app-one {
 }
 
 .team-card::after {
-	content: "";
+	content: '';
 	height: 2px;
 	width: 65%;
 	background: #000;
@@ -1215,7 +1214,7 @@ ul.right-social-ul li {
 
 .sm-title {
 	font-size: 20px;
-	font-family: "Lobster Two", cursive;
+	font-family: 'Lobster Two', cursive;
 	color: #cc3333;
 	font-weight: 500;
 	display: inline-block;
@@ -1277,7 +1276,7 @@ ul.right-social-ul li {
 }
 
 .video-btn:before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -1305,8 +1304,7 @@ ul.right-social-ul li {
 	100% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
 		opacity: 0;
-		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
-			scale(1.5);
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
 		-moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
 		-ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
 		-o-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
@@ -1346,7 +1344,7 @@ ul.right-social-ul li {
 .sec-sm-title {
 	color: #cc3333;
 	text-transform: capitalize;
-	font-family: "Lobster Two", cursive;
+	font-family: 'Lobster Two', cursive;
 	font-size: 20px;
 	line-height: 1;
 	margin-bottom: 10px;
@@ -2134,7 +2132,7 @@ ul.about-ul li {
 }
 
 .subscribe::before {
-	content: "";
+	content: '';
 	clip-path: polygon(0% 0%, 100% 0%, 76% 100%, 0% 100%);
 	background: #fbb217e3;
 	height: 100%;
@@ -2341,15 +2339,11 @@ ul.rating li span.unrated {
 	margin-top: 35px;
 }
 
-.customer-2
-	.swiper-pagination-bullets-dynamic
-	.swiper-pagination-bullet-active-prev {
+.customer-2 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
 	transform: scale(0.66);
 }
 
-.customer-2
-	.swiper-pagination-bullets-dynamic
-	.swiper-pagination-bullet-active-next {
+.customer-2 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
 	transform: scale(0.66);
 }
 
@@ -2613,7 +2607,7 @@ img.app-tow {
 }
 
 .team-card::after {
-	content: "";
+	content: '';
 	height: 2px;
 	width: 65%;
 	background: #000;
@@ -2690,7 +2684,7 @@ img.app-tow {
 .note-footer {
 	text-align: center;
 	padding-top: 25px;
-	font-family: "Lobster Two", cursive;
+	font-family: 'Lobster Two', cursive;
 }
 
 .available-head {
@@ -3376,7 +3370,7 @@ ul.tags-ul {
 }
 
 .title-name:after {
-	content: "";
+	content: '';
 	height: 2px;
 	width: 50px;
 	background: #cc3333;
@@ -3554,7 +3548,7 @@ table.info-table tbody tr {
 }
 
 .team-sec-title:before {
-	content: "";
+	content: '';
 	border-bottom: 3px solid #cc3333;
 	width: 40%;
 	height: 3px;
@@ -3762,7 +3756,7 @@ ul.address li span {
 }
 
 .footer-widget-title:after {
-	content: "";
+	content: '';
 	height: 2px;
 	width: 70%;
 	background: #fff;
@@ -4069,8 +4063,7 @@ ul.social-ul {
 	color: #fbb217;
 }
 
-.customer-2.theme-3
-	span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.customer-2.theme-3 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 	transform: scale(1);
 	background: #fbb217;
 }
@@ -4208,8 +4201,8 @@ ul.social-ul {
 }
 
 .header-menu li.has-submenu > a:after {
-	font-family: "IcoFont";
-	content: "\ea99";
+	font-family: 'IcoFont';
+	content: '\ea99';
 	font-weight: 500;
 	font-size: 15px;
 	display: inline-block;
@@ -4218,7 +4211,7 @@ ul.social-ul {
 }
 
 .header-menu li.has-submenu:hover > a::after {
-	content: "\eaa1";
+	content: '\eaa1';
 }
 
 .search-form-wrapper .form-control.search-input {
@@ -4482,7 +4475,7 @@ ul.social-ul {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	content: "";
+	content: '';
 	background-color: rgba(4, 0, 23, 0.5);
 	z-index: 9;
 	opacity: 0;
@@ -4786,13 +4779,13 @@ ul.social-ul {
 	width: 80px;
 	height: 2px;
 	background-color: #cc3333;
-	content: "";
+	content: '';
 	display: block;
 	margin-top: 10px;
 }
 
 .sidebar-title:before {
-	content: "";
+	content: '';
 	width: 100%;
 	height: 1px;
 	background-color: #ddd;
@@ -5076,9 +5069,9 @@ ul.service-list.mt-0 {
 	position: absolute;
 	left: 0;
 	top: 0;
-	content: "\ea7c";
+	content: '\ea7c';
 	transition: 0.3s;
-	font-family: "IcoFont";
+	font-family: 'IcoFont';
 }
 
 .sidebar-categories li:hover a:before {
@@ -5247,7 +5240,7 @@ ul.service-list.mt-0 {
 	display: inline-block;
 }
 
-.price-filter-wrap .input-wrap .input-group input[type="number"] {
+.price-filter-wrap .input-wrap .input-group input[type='number'] {
 	width: 100%;
 	font-size: 14px;
 	height: 30px;
@@ -5342,7 +5335,7 @@ Update Css For Home 4 & Home 5
 
 .hero-sub-title {
 	font-size: 24px;
-	font-family: "Lobster Two", cursive;
+	font-family: 'Lobster Two', cursive;
 	color: #fff;
 	font-weight: 500;
 	display: inline-block;
@@ -5354,7 +5347,7 @@ Update Css For Home 4 & Home 5
 	line-height: 1.2;
 	color: #fff;
 	margin-bottom: 35px;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .hero4-search input {
@@ -5373,7 +5366,7 @@ Update Css For Home 4 & Home 5
 	z-index: 1;
 }
 
-.hero4-search button[type="submit"] {
+.hero4-search button[type='submit'] {
 	position: absolute;
 	right: 5px;
 	top: 50%;
@@ -5390,13 +5383,13 @@ Update Css For Home 4 & Home 5
 .hero-trending-wrap strong {
 	font-size: 18px;
 	color: #fff;
-	font-family: "oswald";
+	font-family: 'oswald';
 	margin-right: 10px;
 }
 
 .hero-trending-wrap {
 	color: #fff;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .white-clr {
@@ -5409,7 +5402,7 @@ Update Css For Home 4 & Home 5
 	width: 15px;
 	height: 1px;
 	background-color: #ddd;
-	content: "";
+	content: '';
 	left: 100%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -5428,7 +5421,7 @@ Update Css For Home 4 & Home 5
 	width: 15px;
 	height: 1px;
 	background-color: #ddd;
-	content: "";
+	content: '';
 	right: 100%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -5437,13 +5430,13 @@ Update Css For Home 4 & Home 5
 
 .cb-section-subtitle {
 	font-size: 18px;
-	font-family: "oswald";
+	font-family: 'oswald';
 	display: inline-block;
 	margin-bottom: 10px;
 }
 
 .cb-section-title {
-	font-family: "oswald";
+	font-family: 'oswald';
 	font-size: 36px;
 }
 
@@ -5460,7 +5453,7 @@ Update Css For Home 4 & Home 5
 }
 
 .order-feature-title {
-	font-family: "oswald";
+	font-family: 'oswald';
 	font-size: 22px;
 }
 
@@ -5479,7 +5472,7 @@ Update Css For Home 4 & Home 5
 	font-weight: 600;
 	text-transform: uppercase;
 	display: inline-block;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .section-title {
@@ -5488,7 +5481,7 @@ Update Css For Home 4 & Home 5
 	line-height: 1.3;
 	text-transform: capitalize;
 	margin-bottom: 10px;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .service-border {
@@ -5540,7 +5533,7 @@ Update Css For Home 4 & Home 5
 	position: absolute;
 	left: 0;
 	top: 0;
-	content: "";
+	content: '';
 	height: 100%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0);
@@ -5629,7 +5622,7 @@ Update Css For Home 4 & Home 5
 
 .cb-category-cart-name {
 	font-size: 20px;
-	font-family: "oswald";
+	font-family: 'oswald';
 	margin-bottom: 5px;
 	color: #292929;
 }
@@ -5675,7 +5668,7 @@ Update Css For Home 4 & Home 5
 
 .cb-top-restaurant-title {
 	font-size: 22px;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .cb-top-restaurant-title a {
@@ -5744,14 +5737,14 @@ Update Css For Home 4 & Home 5
 	top: 0;
 	width: 100%;
 	height: 100%;
-	content: "";
+	content: '';
 	z-index: -1;
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .cb-offer-cta-content-subtitle {
 	font-size: 22px;
-	font-family: "lobster two";
+	font-family: 'lobster two';
 	color: #fbb217;
 	display: inline-block;
 	margin-bottom: 10px;
@@ -5759,7 +5752,7 @@ Update Css For Home 4 & Home 5
 
 .cb-offer-cta-content-title {
 	font-size: 60px;
-	font-family: "oswald";
+	font-family: 'oswald';
 	color: #fff;
 }
 
@@ -5788,7 +5781,7 @@ Update Css For Home 4 & Home 5
 
 .cb-team-single-name {
 	font-size: 22px;
-	font-family: "oswald";
+	font-family: 'oswald';
 	margin-bottom: 10px;
 }
 
@@ -5812,7 +5805,7 @@ Update Css For Home 4 & Home 5
 	width: 60%;
 	height: 3px;
 	background-color: #fbb217;
-	content: "";
+	content: '';
 	margin-left: -30%;
 	display: inline-block;
 	z-index: 1;
@@ -5824,7 +5817,7 @@ Update Css For Home 4 & Home 5
 	top: 0;
 	height: 3px;
 	background-color: #cc3333;
-	content: "";
+	content: '';
 	display: inline-block;
 	width: 0%;
 	margin-left: 0%;
@@ -5882,7 +5875,7 @@ Update Css For Home 4 & Home 5
 
 .home4-blog .post-title {
 	font-size: 22px;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .date-view .date.mb-0 {
@@ -5921,7 +5914,7 @@ span.sm-title.sm-title2 {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	content: "";
+	content: '';
 	z-index: -1;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -5929,7 +5922,7 @@ span.sm-title.sm-title2 {
 .cb-slider-list li {
 	font-size: 18px;
 	color: #fff;
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .cb-slider-list li:not(:last-child) {
@@ -5963,7 +5956,7 @@ span.sm-title.sm-title2 {
 
 .cb-slide-price {
 	font-size: 24px;
-	font-family: "oswald";
+	font-family: 'oswald';
 	font-weight: 500;
 	color: #fff;
 }
@@ -5974,12 +5967,10 @@ span.sm-title.sm-title2 {
 	display: inline-block;
 	transform: translateY(-18px);
 	margin-left: 5px;
-	font-family: "lobster two";
+	font-family: 'lobster two';
 }
 
-.home5-slider
-	.banner-pagination
-	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.home5-slider .banner-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	background-color: #fbb217;
 }
 
@@ -6002,7 +5993,7 @@ span.sm-title.sm-title2 {
 
 .home5-about .title,
 .home5-about .list-title {
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .mr-20 {
@@ -6019,7 +6010,7 @@ span.sm-title.sm-title2 {
 	cursor: pointer;
 	margin: 0 10px;
 	color: #fff;
-	font-family: "oswald";
+	font-family: 'oswald';
 	font-size: 18px;
 	margin-bottom: 5px;
 }
@@ -6029,7 +6020,7 @@ span.sm-title.sm-title2 {
 }
 
 .tabs .tab-links .item-link:after {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 7px;
 	right: 0;
@@ -6084,7 +6075,7 @@ span.sm-title.sm-title2 {
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 	color: #fff;
-	font-family: "oswald";
+	font-family: 'oswald';
 	font-size: 18px;
 	font-weight: 400;
 	display: flow-root;
@@ -6097,7 +6088,7 @@ span.sm-title.sm-title2 {
 }
 
 .menu-book .menu-list .flex .dots:after {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -6107,7 +6098,7 @@ span.sm-title.sm-title2 {
 
 .menu-book .menu-list .flex .price {
 	margin-left: auto;
-	font-family: "oswald";
+	font-family: 'oswald';
 	font-size: 18px;
 	color: #fbb217;
 	font-weight: 400;
@@ -6135,7 +6126,7 @@ span.sm-title.sm-title2 {
 }
 
 .home5-info .title {
-	font-family: "oswald";
+	font-family: 'oswald';
 }
 
 .cb-item-btn {
@@ -6190,9 +6181,7 @@ span.sm-title.sm-title2 {
 	background-image: url(/img/icon/f-bg.png);
 }
 
-.all-product.product-3
-	.cat-menu.justify-content-center.nav
-	a.cat-menu-li.nav-link.active {
+.all-product.product-3 .cat-menu.justify-content-center.nav a.cat-menu-li.nav-link.active {
 	color: #fbb217;
 }
 
@@ -6876,9 +6865,7 @@ nav.mobile-menu-nav ul li a.active {
 	padding: 0 15px;
 }
 
-.select2-container--default
-	.select2-selection--single
-	.select2-selection__arrow {
+.select2-container--default .select2-selection--single .select2-selection__arrow {
 	height: 45px;
 	line-height: 45px;
 	right: 10px;
@@ -6905,10 +6892,8 @@ nav.mobile-menu-nav ul li a.active {
 	border: 1px solid #f2f2f2;
 }
 
-.select2-container--default
-	.select2-results__option--highlighted[aria-selected],
-.select2-container--default
-	.select2-results__option--highlighted[data-selected] {
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
 	background-color: #ddd;
 	color: #292929;
 }
@@ -6920,8 +6905,8 @@ nav.mobile-menu-nav ul li a.active {
 	border-bottom: 1px solid #f2f2f2;
 }
 
-.select2-container--default .select2-results__option[aria-selected="true"],
-.select2-container--default .select2-results__option[data-selected="true"] {
+.select2-container--default .select2-results__option[aria-selected='true'],
+.select2-container--default .select2-results__option[data-selected='true'] {
 	background-color: #ddd;
 	color: #292929;
 }
@@ -6938,9 +6923,7 @@ nav.mobile-menu-nav ul li a.active {
 	border-radius: 3px;
 }
 
-.checkout-additional-fields__field-wrapper
-	.checkout-input-wrapper
-	textarea:focus {
+.checkout-additional-fields__field-wrapper .checkout-input-wrapper textarea:focus {
 	border: 1px solid #cc3333;
 	outline: 0;
 }
@@ -6960,8 +6943,8 @@ nav.mobile-menu-nav ul li a.active {
 
 .checkout-info::before {
 	color: #292929;
-	font-family: "IcoFont";
-	content: "\eecd";
+	font-family: 'IcoFont';
+	content: '\eecd';
 	display: inline-block;
 	position: absolute;
 	top: 1em;
@@ -7011,14 +6994,11 @@ nav.mobile-menu-nav ul li a.active {
 	color: #fff;
 }
 
-.checkout-shipping-fields.cafeu-woo-form-shipping-form-style-custom
-	.checkout-form__label-for-checkbox {
+.checkout-shipping-fields.cafeu-woo-form-shipping-form-style-custom .checkout-form__label-for-checkbox {
 	font-size: 16px;
 }
 
-.checkout-shipping-fields.cafeu-woo-form-shipping-form-style-custom
-	.checkout-form__label-for-checkbox
-	input {
+.checkout-shipping-fields.cafeu-woo-form-shipping-form-style-custom .checkout-form__label-for-checkbox input {
 	margin-right: 3px;
 }
 
@@ -7027,10 +7007,7 @@ nav.mobile-menu-nav ul li a.active {
 	margin-bottom: 3px;
 }
 
-.shipping_address
-	.checkout-shipping-fields__field-wrapper
-	.checkout-input-wrapper
-	input {
+.shipping_address .checkout-shipping-fields__field-wrapper .checkout-input-wrapper input {
 	width: 100%;
 	height: 45px;
 	line-height: 45px;
@@ -7039,18 +7016,12 @@ nav.mobile-menu-nav ul li a.active {
 	border-radius: 3px;
 }
 
-.shipping_address
-	.checkout-shipping-fields__field-wrapper
-	.checkout-input-wrapper
-	input:focus {
+.shipping_address .checkout-shipping-fields__field-wrapper .checkout-input-wrapper input:focus {
 	outline: 0;
 	border-color: #cc3333;
 }
 
-.checkout-input-wrapper
-	.select2-container--default
-	.select2-selection--single
-	.select2-selection__rendered {
+.checkout-input-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
 	line-height: 45px;
 }
 
@@ -7062,7 +7033,7 @@ nav.mobile-menu-nav ul li a.active {
 .checkout form .form-row::before,
 .checkout-page form .form-row::after,
 .checkout-page form .form-row::before {
-	content: " ";
+	content: ' ';
 	display: table;
 }
 
@@ -7274,7 +7245,7 @@ select#billing_country {
 .checkout-page .checkout-billing-fields::before,
 .checkout-page .checkout-shipping-fields::after,
 .checkout-page .checkout-shipping-fields::before {
-	content: " ";
+	content: ' ';
 	display: table;
 }
 
@@ -7356,7 +7327,7 @@ p#billing_last_name_field {
 	top: 0;
 	width: 3px;
 	height: 100%;
-	content: "";
+	content: '';
 	background-color: #cc3333;
 	opacity: 0;
 	visibility: hidden;
@@ -7393,9 +7364,9 @@ p#billing_last_name_field {
 	color: #292929;
 }
 
-.login-form.login-form-login.login input[type="text"],
-.login-form.login-form-login.login input[type="email"],
-.login-form.login-form-login.login input[type="password"] {
+.login-form.login-form-login.login input[type='text'],
+.login-form.login-form-login.login input[type='email'],
+.login-form.login-form-login.login input[type='password'] {
 	height: 45px;
 	width: 100%;
 	line-height: 45px;
@@ -7404,13 +7375,12 @@ p#billing_last_name_field {
 	padding: 0 15px;
 }
 
-.login-form.login-form-login.login input[type="checkbox"] {
+.login-form.login-form-login.login input[type='checkbox'] {
 	display: inline-block;
 	margin-right: 5px;
 }
 
-.login-form.login-form-login.login
-	.login-button.button.login-form-login__submit {
+.login-form.login-form-login.login .login-button.button.login-form-login__submit {
 	height: 45px;
 	line-height: 45px;
 	padding: 0 25px;
@@ -7422,13 +7392,12 @@ p#billing_last_name_field {
 	border-radius: 3px;
 }
 
-.login-form.login-form-login.login
-	.login-button.button.login-form-login__submit:hover {
+.login-form.login-form-login.login .login-button.button.login-form-login__submit:hover {
 	background-color: #292929;
 	color: #fff;
 }
 
-.login-form.login-form-register.register input[type="email"] {
+.login-form.login-form-register.register input[type='email'] {
 	height: 45px;
 	line-height: 45px;
 	padding: 0 15px;
@@ -7485,9 +7454,9 @@ p#billing_last_name_field {
 	margin-bottom: 5px;
 }
 
-.login-EditAccountForm.edit-account input[type="text"],
-.login-EditAccountForm.edit-account input[type="email"],
-.login-EditAccountForm.edit-account input[type="password"] {
+.login-EditAccountForm.edit-account input[type='text'],
+.login-EditAccountForm.edit-account input[type='email'],
+.login-EditAccountForm.edit-account input[type='password'] {
 	height: 45px;
 	width: 100%;
 	border: 1px solid #f2f2f2;
@@ -7543,7 +7512,7 @@ p#billing_last_name_field {
 	color: #292929 !important;
 }
 
-.login-address-fields .button[type="submit"] {
+.login-address-fields .button[type='submit'] {
 	height: 45px;
 	padding: 0 30px;
 	border: 0;
@@ -7555,7 +7524,7 @@ p#billing_last_name_field {
 	transition: 0.3s;
 }
 
-.login-address-fields .button[type="submit"]:hover {
+.login-address-fields .button[type='submit']:hover {
 	background-color: #292929;
 	color: #fff;
 }
@@ -7572,14 +7541,14 @@ p#billing_last_name_field {
 
 .login form .show-password-input::after,
 .login-page form .show-password-input::after {
-	font-family: "IcoFont";
+	font-family: 'IcoFont';
 	font-weight: 400;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	margin-left: 0.618em;
-	content: "\ef24";
+	content: '\ef24';
 	text-decoration: none;
 }
 
@@ -7621,7 +7590,7 @@ p#billing_last_name_field {
 /* Layout Common CSS Start*/
 .home-6,
 .home-6 p {
-	font-family: "Cormorant Garamond", serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 /* Layout Common CSS End */
@@ -7692,10 +7661,7 @@ p#billing_last_name_field {
 	top: 100%;
 }
 
-.home-6
-	header.header-3
-	.responsive-dropdown:hover
-	.responsive-dropdown-content {
+.home-6 header.header-3 .responsive-dropdown:hover .responsive-dropdown-content {
 	opacity: 1;
 	visibility: visible;
 }
@@ -7946,7 +7912,7 @@ button.ad-cart-img-header-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "Jost";
+	font-family: 'Jost';
 	transition: 0.4s ease;
 }
 
@@ -8207,7 +8173,7 @@ img.ad-about-side-tea {
 	top: 0;
 	z-index: 1;
 	left: 0;
-	background-image: url("/img/aida-images/banner-shape.png");
+	background-image: url('/img/aida-images/banner-shape.png');
 	color: white;
 	height: 100%;
 	width: 900px;
@@ -8618,7 +8584,7 @@ img.ad-about-side-tea {
 .ad-description-text {
 	font-size: 18px;
 	color: #606060;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	width: 40%;
 	margin: 0 auto;
 }
@@ -8918,7 +8884,7 @@ img.ad-about-side-tea {
 
 /* Video Section Start */
 .ad-video-container {
-	background: url("/img/aida-images/video-image.png") center no-repeat;
+	background: url('/img/aida-images/video-image.png') center no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
@@ -9032,7 +8998,7 @@ img.ad-about-side-tea {
 }
 
 .ad-single-service p {
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	color: #606060;
 	margin-bottom: 10px;
 }
@@ -9049,7 +9015,7 @@ img.ad-about-side-tea {
 }
 
 .ad-single-service-overlay {
-	background-image: url("/img/aida-images/service-overlay-image.png");
+	background-image: url('/img/aida-images/service-overlay-image.png');
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -9070,7 +9036,7 @@ img.ad-about-side-tea {
 
 .ad-single-service-overlay p {
 	color: rgb(255, 255, 255);
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-top: 15px;
 	font-size: 16px;
 }
@@ -9238,7 +9204,7 @@ img.ad-about-side-tea {
 }
 
 span.ad-offer-price:before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 140px;
 	height: 0.1px;
@@ -9260,7 +9226,7 @@ span.ad-offer-price:before {
 .ad-offer-single-card p {
 	font-size: 18px;
 	color: #606060;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-bottom: 15px;
 }
 
@@ -9288,7 +9254,7 @@ span.ad-offer-price:before {
 	font-weight: 700;
 	color: #062126d5;
 	text-transform: uppercase;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin: 0;
 }
 
@@ -9563,7 +9529,7 @@ span.ad-offer-price:before {
 	color: #525252;
 	text-align: left;
 	padding-left: 30px;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -9698,7 +9664,7 @@ textarea#\#messageArea:focus-visible {
 	padding: 10px 0;
 	background-color: transparent;
 	font-size: 20px;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	outline: none;
 }
 
@@ -9767,14 +9733,14 @@ textarea#\#messageArea:focus-visible {
 .ad-reservation-single-content p span {
 	font-size: 30px;
 	font-weight: 600;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-bottom: 10px;
 }
 
 .ad-reservation-single-content p {
 	font-size: 30px;
 	font-weight: 600;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-bottom: 10px;
 }
 
@@ -9914,7 +9880,7 @@ textarea#\#messageArea:focus-visible {
 .ad-single-review p {
 	font-size: 18px;
 	color: #525252;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	text-align: start;
 	margin-top: 30px;
 }
@@ -9937,7 +9903,7 @@ textarea#\#messageArea:focus-visible {
 
 .ad-review-person-container span {
 	font-size: 14px;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	font-weight: 400;
 	margin-top: 0px;
 	text-transform: uppercase;
@@ -10012,7 +9978,7 @@ button.card-review-btn {
 .ad-article-title-container p {
 	font-size: 18px;
 	color: #606060;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-top: 10px;
 }
 
@@ -10047,7 +10013,7 @@ button.card-review-btn {
 .ad-single-card p {
 	font-size: 18px;
 	color: #808080;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-top: 30px;
 	padding-left: 20px;
 	text-transform: uppercase;
@@ -10169,7 +10135,7 @@ button.card-review-btn {
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin: 0;
 }
 
@@ -10189,7 +10155,7 @@ button.card-review-btn {
 }
 
 .ad-footer-list h5::after {
-	content: "";
+	content: '';
 	display: block;
 	width: 20%;
 	height: 2px;
@@ -10198,7 +10164,7 @@ button.card-review-btn {
 }
 
 .ad-footer-list li {
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin-top: 10px;
 }
 
@@ -10238,7 +10204,7 @@ a.ad-menu-img-container {
 
 .ad-footer-bottom p {
 	font-size: 15px;
-	font-family: "Jost", sans-serif;
+	font-family: 'Jost', sans-serif;
 	margin: 0;
 }
 
@@ -11307,7 +11273,7 @@ a.ad-menu-img-container {
 
 .contact-page-single-form input::placeholder {
 	color: #c3c3c3;
-	font-family: "Cormorant Garamond", serif;
+	font-family: 'Cormorant Garamond', serif;
 	text-transform: uppercase;
 }
 
@@ -11774,7 +11740,7 @@ a.custom-btn-2:hover {
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #f8f8ff;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 45px;
@@ -11822,8 +11788,7 @@ a.custom-btn-2:hover {
 	flex-direction: column;
 	align-items: center;
 	background: white;
-	box-shadow: 15px 14px 4px rgba(240, 240, 240, 0.4),
-		inset -1px 0px 16px 13px rgba(180, 180, 180, 0.3);
+	box-shadow: 15px 14px 4px rgba(240, 240, 240, 0.4), inset -1px 0px 16px 13px rgba(180, 180, 180, 0.3);
 
 	border-radius: 16px;
 }
@@ -11863,7 +11828,7 @@ a.custom-btn-2:hover {
 
 .user-page .order-info-box .order-user-name {
 	margin-top: 10px;
-	font-family: "Commissioner";
+	font-family: 'Commissioner';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 28px;
@@ -11872,7 +11837,7 @@ a.custom-btn-2:hover {
 }
 
 .user-page .order-info-box .order-user-prof {
-	font-family: "Commissioner";
+	font-family: 'Commissioner';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
@@ -11893,7 +11858,7 @@ a.custom-btn-2:hover {
 	width: 90%;
 	display: flex;
 	justify-content: center;
-	font-family: "DM Sans";
+	font-family: 'DM Sans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -11919,7 +11884,7 @@ a.custom-btn-2:hover {
 
 .user-page .menu-box span {
 	margin-left: 30px;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 25px;
@@ -11956,7 +11921,7 @@ a.custom-btn-2:hover {
 	flex-direction: column;
 }
 .user-page .settings .spec-label {
-	font-family: "Source Serif Pro";
+	font-family: 'Source Serif Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -11974,7 +11939,7 @@ a.custom-btn-2:hover {
 	background: #f7f7f7;
 	box-shadow: 0px 4px 4px RGB(165, 164, 164);
 	border-radius: 5px;
-	font-family: "GT Walsheim Pro";
+	font-family: 'GT Walsheim Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
@@ -11992,7 +11957,7 @@ a.custom-btn-2:hover {
 	background: #f7f7f7;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 5px;
-	font-family: "GT Walsheim Pro";
+	font-family: 'GT Walsheim Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
@@ -12026,7 +11991,7 @@ a.custom-btn-2:hover {
 }
 
 .user-page .settings .media-change-box span {
-	font-family: "GT Walsheim Pro";
+	font-family: 'GT Walsheim Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -12036,7 +12001,7 @@ a.custom-btn-2:hover {
 
 .user-page .settings .media-change-box p {
 	margin: 10px 0px 14px 0px;
-	font-family: "GT Walsheim Pro";
+	font-family: 'GT Walsheim Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -12094,7 +12059,7 @@ a.custom-btn-2:hover {
 	background: red;
 	border-width: 1px 0px;
 	border-style: solid;
-	border-color: red
+	border-color: red;
 }
 
 .basket-frame .basket-info-box {
@@ -12117,7 +12082,7 @@ a.custom-btn-2:hover {
 .basket-info-box .product-name {
 	margin-left: 11px;
 	width: 185px;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -12127,7 +12092,7 @@ a.custom-btn-2:hover {
 
 .basket-info-box .product-price {
 	width: 80px;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
@@ -12135,8 +12100,7 @@ a.custom-btn-2:hover {
 	color: #ae0000;
 }
 
-.basket-info-box
-	.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+.basket-info-box .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
 	padding: 6.5px 14px;
 }
 
@@ -12165,7 +12129,7 @@ a.custom-btn-2:hover {
 .basket-order .price {
 	width: 200px;
 	display: flex;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -12247,18 +12211,13 @@ a.custom-btn-2:hover {
 	width: 821px;
 	height: 244px;
 	border-radius: 16px;
-	box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),
-		inset 0px 4px 10px 9px rgb(211, 211, 231),
+	box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04), inset 0px 4px 10px 9px rgb(211, 211, 231),
 		-12px 12px 4px 0px rgb(186, 186, 191);
 	background: rgb(248, 248, 254);
 	margin-bottom: 32px;
 }
 
-.order-page
-	.order-container
-	.order-main-content
-	.order-main-box
-	.order-box-scroll {
+.order-page .order-container .order-main-content .order-main-box .order-box-scroll {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -12290,7 +12249,7 @@ a.custom-btn-2:hover {
 }
 
 .order-page .order-box-scroll .orders-name-price .title-dish {
-	font-family: "Commissioner";
+	font-family: 'Commissioner';
 	font-size: 22px;
 	font-weight: 500;
 	line-height: 36px;
@@ -12311,7 +12270,7 @@ a.custom-btn-2:hover {
 	max-width: 170px;
 }
 .order-page .order-box-scroll .orders-name-price .price-box p {
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
@@ -12377,7 +12336,7 @@ a.custom-btn-2:hover {
 	height: 36px;
 	border-radius: 10px;
 	margin-left: -28px;
-	font-family: "Commissioner";
+	font-family: 'Commissioner';
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 17px;
@@ -12421,8 +12380,7 @@ a.custom-btn-2:hover {
 	height: 308px;
 	margin-left: 54px;
 	border-radius: 16px;
-	box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),
-		inset 0px 1px 11px 12px rgb(211, 211, 231),
+	box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04), inset 0px 1px 11px 12px rgb(211, 211, 231),
 		14px 14px 5px 0px rgb(187, 187, 191);
 	background: rgb(248, 248, 254);
 }
@@ -12465,7 +12423,7 @@ a.custom-btn-2:hover {
 }
 
 .order-page .order-info-box .order-user-name {
-	font-family: "Commissioner";
+	font-family: 'Commissioner';
 	font-size: 28px;
 	font-style: normal;
 	font-weight: 500;
@@ -12475,7 +12433,7 @@ a.custom-btn-2:hover {
 }
 
 .order-page .order-info-box .order-user-prof {
-	font-family: "Commissioner";
+	font-family: 'Commissioner';
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 500;
@@ -12532,8 +12490,7 @@ a.custom-btn-2:hover {
 	height: 308px;
 	margin-bottom: 100px;
 	border-radius: 16px;
-	box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),
-		inset 0px 1px 11px 12px rgb(211, 211, 231),
+	box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04), inset 0px 1px 11px 12px rgb(211, 211, 231),
 		14px 14px 5px 0px rgb(187, 187, 191);
 	background: rgb(248, 248, 254);
 }
@@ -12556,11 +12513,7 @@ a.custom-btn-2:hover {
 	letter-spacing: 0%;
 }
 
-.order-page
-	.order-right
-	.order-payment-box
-	.order-card-number
-	.card-input-full {
+.order-page .order-right .order-payment-box .order-card-number .card-input-full {
 	margin-bottom: 15px;
 	display: flex;
 	flex-direction: column;
@@ -12579,12 +12532,7 @@ a.custom-btn-2:hover {
 	gap: 8px;
 }
 
-.order-page
-	.order-right
-	.order-payment-box
-	.order-card-number
-	.card-half
-	.card-input-half {
+.order-page .order-right .order-payment-box .order-card-number .card-half .card-input-half {
 	width: 162px;
 	height: 40px;
 	box-sizing: border-box;
