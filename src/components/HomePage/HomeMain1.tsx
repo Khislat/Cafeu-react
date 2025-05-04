@@ -11,10 +11,31 @@ import CustomerSection from "../customer/CustomerSection";
 import BlogSection from "../blog/BlogSection";
 import FooterSection from "../footer/FooterSection";
 import SidebarSection from "../sidebar/SidebarSection";
+import { useEffect } from "react";
 
+import { useDispatch, useSelector } from "react-redux";
+import { Dispatch } from "@reduxjs/toolkit";
+import { createSelector } from "reselect";
+import { setSpecialDishes } from "../../../src/Redux/homePage/slice.ts";
+import { retrieveSpecialDishes } from "../../Redux/homePage/selector";
+import { Product } from "../../../libs/types/product.ts";
 
+/** REDUX SLICE & SELECTOR **/
+
+const actionDispatch = (distpatch: Dispatch) => ({
+	setSpecialDishes: (data: Product[]) => distpatch(setSpecialDishes(data)),
+});
+
+const specialDishesReriever = createSelector(
+	retrieveSpecialDishes,
+	(specialDishes) => ({ specialDishes })
+);
 
 const HomeMain = () => {
+	const { setSpecialDishes } = actionDispatch(useDispatch());
+	const { specialDishes } = useSelector(specialDishesReriever);
+
+	useEffect(() => {}, []);
 	return (
 		<div className="body-wrapper">
 			<BannerSection theme="banner-1" startIndex={0} endIndex={3} />
@@ -29,7 +50,7 @@ const HomeMain = () => {
 			<TeamSection />
 			<CustomerSection />
 			<BlogSection style="" />
-			
+
 			<FooterSection style="footer-1" />
 		</div>
 	);

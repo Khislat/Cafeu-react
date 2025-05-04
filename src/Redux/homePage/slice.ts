@@ -10,7 +10,7 @@ const homePageSlice = createSlice({
 	name: "homePage",
 	initialState,
 	reducers: {
-		setSpecicalDishes: (state, action) => {
+		setSpecialDishes: (state, action) => {
 			state.specialDishes = action.payload;
 		},
 		setTopUsers: (state, action) => {
@@ -19,7 +19,7 @@ const homePageSlice = createSlice({
 	},
 });
 
-export const { setSpecicalDishes, setTopUsers } = homePageSlice.actions;
+export const { setSpecialDishes, setTopUsers } = homePageSlice.actions;
 
 const HomePageReducer = homePageSlice.reducer;
 export default HomePageReducer;

@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import HomePageReducer from "./Redux/homePage/slice";
 import reduxLogger from "redux-logger";
-import { Middleware } from "redux";
+import type { Middleware } from "redux";
 
-const logger = reduxLogger as Middleware<{}, any, any>; // ✅ casting ishlatildi
+const logger = reduxLogger as Middleware;
 
 export const store = configureStore({
 	middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger), // reduxLogger o‘rniga logger
