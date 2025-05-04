@@ -6,7 +6,7 @@ import type { Middleware } from "redux";
 const logger = reduxLogger as Middleware;
 
 export const store = configureStore({
-	middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger), // reduxLogger o‘rniga logger
+	middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 	reducer: {
 		homePage: HomePageReducer,
 	},

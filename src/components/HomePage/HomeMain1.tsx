@@ -35,6 +35,8 @@ const HomeMain = () => {
 	const { setSpecialDishes } = actionDispatch(useDispatch());
 	const { specialDishes } = useSelector(specialDishesReriever);
 
+	console.log("root", import.meta.env.VITE_API_URL);
+
 	useEffect(() => {}, []);
 	return (
 		<div className="body-wrapper">
