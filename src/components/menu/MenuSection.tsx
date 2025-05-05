@@ -134,20 +134,67 @@ import { Link } from 'react-router-dom';
 import { useCafeuContext } from '../../context/CafeuContext';
 import { Nav } from 'react-bootstrap';
 
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { retrieveSpecialDishes } from '../../Redux/homePage/selector';
 import { serverApi } from '../../../libs/config';
 import { productList } from '../../data/Data';
+import { ChangeEvent, useEffect, useState } from 'react';
+import { Product, ProductInquiry } from '../../../libs/types/product';
+import { ProductCollection } from '../../../libs/enums/product.enum';
+import MemberService from '../../services/MemberService';
+import ProductService from '../../services/ProductService';
+import { setSpecialDishes } from '../../Redux/homePage/slice';
+import { Dispatch } from '@reduxjs/toolkit';
 
 /** REDUX SLICE & SELECTOR **/
 const specialDishesReriever = createSelector(retrieveSpecialDishes, (specialDishes) => ({ specialDishes }));
 
-const MenuSection = () => {
-	const { specialDishes } = useSelector(specialDishesReriever);
+const actionDispatch = (distpatch: Dispatch) => ({
+	setSpecialDishes: (data: Product[]) => distpatch(setSpecialDishes(data)),
+});
 
-	
+const MenuSection = () => {
 	const authMember = true;
+	const { specialDishes } = useSelector(specialDishesReriever);
+	const { setSpecialDishes } = actionDispatch(useDispatch());
+	const [productSearch, setProductSearch] = useState<ProductInquiry>({
+		page: 1,
+		limit: 8,
+		order: 'createdAt',
+		productCollection: ProductCollection.PIZZA,
+		search: '',
+	});
+
+	useEffect(() => {
+		// Backend server data fetch = Data
+		const product = new ProductService();
+		product
+			.getProducts(productSearch)
+			.then((data) => {
+				setSpecialDishes(data);
+			})
+			.catch((err) => console.log(err));
+
+		const member = new MemberService();
+	}, [productSearch]);
+
+	/** HANDLERS **/
+	const searchCollectionHandler = (collection: ProductCollection) => {
+		productSearch.page = 1;
+		productSearch.productCollection = collection;
+		setProductSearch({ ...productSearch });
+	};
+
+	const paginationHandlear = (e: ChangeEvent<any>, value: number) => {
+		productSearch.page = value;
+		setProductSearch({ ...productSearch });
+	};
+
+
+	// const chooseDishHandlear = (id: string) => {
+	// 	history.push(`/products/${id}`);
+	// };
 
 	// const { activeMenuTab, handleMenuTabChange, filteredItemList, addToCart, wishlisttoast, wishlist } = useCafeuContext();
 
@@ -162,48 +209,78 @@ const MenuSection = () => {
 								<h2 className="sec-title">Our Specials Menu</h2>
 								<div className="product-cat mb-40">
 									<div className="controls">
-										<Nav className="cat-menu justify-content-center home-1-menu-section"><Nav.Item>
-												<Nav.Link className="cat-menu-li " eventKey="all">
+										<Nav className="cat-menu justify-content-center home-1-menu-section">
+											<Nav.Item>
+												<Nav.Link
+													className="cat-menu-li "
+													eventKey="all"
+													onClick={() => searchCollectionHandler(ProductCollection.ALL)}
+												>
 													<img src="img/category/icon/7.png" alt="" className="cat-icon" />
 													<span className="cat-name">All</span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link className="cat-menu-li " eventKey="pizza">
+												<Nav.Link
+													className="cat-menu-li "
+													eventKey="pizza"
+													onClick={() => searchCollectionHandler(ProductCollection.PIZZA)}
+												>
 													<img src="img/category/icon/1.png" alt="" className="cat-icon" />
 													<span className="cat-name">Pizza</span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link className="cat-menu-li" eventKey="asian">
+												<Nav.Link
+													className="cat-menu-li"
+													eventKey="asian"
+													onClick={() => searchCollectionHandler(ProductCollection.ASIAN)}
+												>
 													<img src="img/category/icon/2.png" alt="" className="cat-icon" />
 													<span className="cat-name">Asian</span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link className="cat-menu-li" eventKey="burger">
+												<Nav.Link
+													className="cat-menu-li"
+													eventKey="burger"
+													onClick={() => searchCollectionHandler(ProductCollection.BURGER)}
+												>
 													<img src="img/category/icon/3.png" alt="" className="cat-icon" />
 													<span className="cat-name">Burger</span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link className="cat-menu-li" eventKey="salad">
+												<Nav.Link
+													className="cat-menu-li"
+													eventKey="salad"
+													onClick={() => searchCollectionHandler(ProductCollection.SALAD)}
+												>
 													<img src="img/category/icon/4.png" alt="" className="cat-icon" />
 													<span className="cat-name">Salad</span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link className="cat-menu-li" eventKey="bakery">
+												<Nav.Link
+													className="cat-menu-li"
+													eventKey="bakery"
+													onClick={() => searchCollectionHandler(ProductCollection.BAKERY)}
+												>
 													<img src="img/category/icon/5.png" alt="" className="cat-icon" />
 													<span className="cat-name">Bakery</span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link className="cat-menu-li" eventKey="drink">
+												<Nav.Link
+													className="cat-menu-li"
+													eventKey="drink"
+													onClick={() => searchCollectionHandler(ProductCollection.DRINK)}
+												>
 													<img src="img/category/icon/6.png" alt="" className="cat-icon" />
 													<span className="cat-name">Drink</span>
 												</Nav.Link>
-											</Nav.Item></Nav>
+											</Nav.Item>
+										</Nav>
 									</div>
 								</div>
 							</div>

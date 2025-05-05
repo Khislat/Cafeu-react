@@ -21,26 +21,17 @@ import ProductService from '../../services/ProductService';
 import MemberService from '../../services/MemberService';
 import { Member } from '../../../libs/types/member';
 
+
 /** REDUX SLICE & SELECTOR **/
 
 const actionDispatch = (distpatch: Dispatch) => ({
-	setSpecialDishes: (data: Product[]) => distpatch(setSpecialDishes(data)),
 	setTopUsers: (data: Member[]) => distpatch(setTopUsers(data)),
 });
 
 const HomeMain = () => {
-	const { setSpecialDishes, setTopUsers } = actionDispatch(useDispatch());
+	const { setTopUsers } = actionDispatch(useDispatch());
 
 	useEffect(() => {
-		// Backend server data fetch = Data
-		const product = new ProductService();
-		product
-			.getProducts({ page: 1, limit: 6, order: 'productViews' })
-			.then((data) => {
-				setSpecialDishes(data);
-			})
-			.catch((err) => console.log(err));
-
 		const member = new MemberService();
 		member
 			.getTopUsers()
@@ -58,6 +49,7 @@ const HomeMain = () => {
 			<SubscribeSection wrapper="subscribe-wrapper-1" style="" />
 			<AboutSection />
 			<MenuSection />
+
 			<AppSection />
 			<ScheduleSection />
 			<TeamSection />

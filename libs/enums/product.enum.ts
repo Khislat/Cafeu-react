@@ -1,8 +1,8 @@
 export enum ProductSize {
-	SMALL = "SMALL",
-	NORMAL = "NORMAL",
-	LARGE = "LARGE",
-	SET = "SET",
+	SMALL = 'SMALL',
+	NORMAL = 'NORMAL',
+	LARGE = 'LARGE',
+	SET = 'SET',
 }
 
 export enum ProductVolume {
@@ -14,16 +14,17 @@ export enum ProductVolume {
 }
 
 export enum ProductStatus {
-	PAUSE = "PAUSE",
-	PROCESS = "PROCESS",
-	DELETE = "DELETE",
+	PAUSE = 'PAUSE',
+	PROCESS = 'PROCESS',
+	DELETE = 'DELETE',
 }
 
 export enum ProductCollection {
-	PIZZA = "PIZZA",
-	ASIAN = "ASIAN",
-	BURGER = "BURGER",
-	SALAD = "SALAD",
-	BAKERY = "BAKERY",
-	DRINK = "DRINK",
+	ALL = 'ALL',
+	PIZZA = 'PIZZA',
+	ASIAN = 'ASIAN',
+	BURGER = 'BURGER',
+	SALAD = 'SALAD',
+	BAKERY = 'BAKERY',
+	DRINK = 'DRINK',
 }

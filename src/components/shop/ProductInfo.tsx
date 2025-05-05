@@ -3,9 +3,10 @@ import React, { ChangeEvent, useState } from "react";
 import { Form } from "react-bootstrap";
 interface InfoProp {
 	shopData: {
-		name: string;
-		price: number;
-		id: number;
+		productImages: string[];
+		productName: string;
+		productPrice: number;
+		_id: string;
 	};
 }
 const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
@@ -20,7 +21,7 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 	};
 	return (
 		<div className="product-main-info mb-50">
-			<h4 className="name">{shopData.name}</h4>
+			<h4 className="name">{shopData.productName}</h4>
 			<div className="rating-div">
 				<ul className="rating">
 					<li>
@@ -47,7 +48,7 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 				<p>(3) Rating</p>
 			</div>
 			<div className="price-section">
-				<p>Price: ${shopData.price}</p>
+				<p>Price: ${shopData.productPrice}</p>
 			</div>
 			<ul className="info-list">
 				<li>
@@ -104,10 +105,10 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 			{authMember ? (
 				<div className="cart-sec">
 					<div className="btn-sec">
-						<a
+						{/* <a
 							className="custom-btn"
 							role="button"
-							onClick={() => addToCartWithQuantity(shopData.id, quantity)}>
+							onClick={() => addToCartWithQuantity(shopData._id, quantity)}>
 							Add To Cart
 						</a>
 						<a
@@ -115,7 +116,7 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 							role="button"
 							onClick={() => addToWishlist(shopData.id)}>
 							Add To Wishlist
-						</a>
+						</a> */}
 					</div>
 				</div>
 			) : null}
