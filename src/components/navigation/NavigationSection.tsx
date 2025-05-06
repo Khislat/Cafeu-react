@@ -4,7 +4,7 @@ import Basket from "../HomePage/Basket";
 // import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const NavigationSection = () => {
-	const authMember = null;
+	const authMember = true;
 
 	return (
 		<nav className="cf-header-menu" id="header-menu">

@@ -1,33 +1,105 @@
-import { useCafeuContext } from "../../context/CafeuContext";
-import React, { useState } from "react";
-import { toast } from "react-toastify";
+import { useCafeuContext } from '../../context/CafeuContext';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import { useGlobals } from '../hooks/useGlobals';
+import { T } from '../../../libs/types/common';
+import { Messages } from '../../../libs/config';
+import { LoginInput, MemberInput } from '../../../libs/types/member';
+import MemberService from '../../services/MemberService';
+import { useNavigate } from 'react-router-dom';
 
-const LoginForm = () => {
+interface AuthenticationModalProps {
+	handleLoginClose: () => void;
+}
+
+const LoginForm = (props: AuthenticationModalProps) => {
+	const { handleLoginClose } = props;
 	const { passwordVisible, togglePasswordVisibility } = useCafeuContext();
-	const [userName, setUserName] = useState("");
+	const [memberNick, setMemberNick] = useState<string>('');
+	const [memberPassword, setMemberPassword] = useState<string>('');
+	const { setAuthMember } = useGlobals();
+	const navigate = useNavigate();
 
-	const [password, setPassword] = useState("");
-	const handleFormSubmit = (e: React.FormEvent) => {
-		e.preventDefault();
+	/** HANDLERS **/
 
-		if (!userName && !password) {
-			toast.error("Please fill out all fields.", { position: "top-right" });
-		} else if (!password) {
-			toast.warning("Please provide password.", { position: "top-right" });
-		} else if (!userName) {
-			toast.warning("Please provide user name.", { position: "top-right" });
-		} else {
-			// If the form is successfully submitted, show a success toast
-			toast.success("Signed In successfully!", { position: "top-right" });
-			setUserName("");
-			setPassword("");
+	// const handleFormSubmit = async (e: React.FormEvent) => {
+	// 	try {
+	// 		e.preventDefault();
+
+	// 		if (!memberNick && !memberPassword) {
+	// 			toast.error('Please fill out all fields.', { position: 'top-right' });
+	// 		} else if (!memberPassword) {
+	// 			toast.warning('Please provide password.', { position: 'top-right' });
+	// 		} else if (!memberNick) {
+	// 			toast.warning('Please provide user name.', { position: 'top-right' });
+	// 		}
+
+	// 		const loginInput: LoginInput = {
+	// 			memberNick,
+	// 			memberPassword,
+	// 		};
+
+	// 		const member = new MemberService();
+	// 		const result = await member.login(loginInput);
+
+	// 		if (!result) {
+	// 			toast.error('Login failed. Please try again.', { position: 'top-right' });
+	// 			return;
+	// 		}
+	// 		setAuthMember(result);
+	// 		setMemberNick('');
+	// 		setMemberPassword('');
+	// 		handleLoginClose();
+	// 	} catch (err) {
+	// 		console.log(err);
+	// 		handleLoginClose();
+	// 	}
+	// };
+	const handleFormSubmit = async (e: React.FormEvent) => {
+		try {
+			e.preventDefault();
+
+			if (!memberNick && !memberPassword) {
+				toast.error('Please fill out all fields.', { position: 'top-right' });
+				return;
+			} else if (!memberPassword) {
+				toast.warning('Please provide password.', { position: 'top-right' });
+				return;
+			} else if (!memberNick) {
+				toast.warning('Please provide user name.', { position: 'top-right' });
+				return;
+			}
+
+			const loginInput: LoginInput = {
+				memberNick,
+				memberPassword,
+			};
+
+			const member = new MemberService();
+			const result = await member.login(loginInput);
+
+			if (!result) {
+				toast.error('Login failed. Please try again.', { position: 'top-right' });
+				return;
+			} else {
+				toast.success('Signed in successfully!', { position: 'top-right' });
+			}
+
+			setAuthMember(result);
+			setMemberNick('');
+			setMemberPassword('');
+			handleLoginClose();
+		} catch (err: any) {
+			toast.error('Login failed. Please try again.', { position: 'top-right' });
+			setTimeout(() => {
+				navigate('/signup');
+			}, 2000);
+			return;
 		}
 	};
 
 	return (
-		<form
-			className="login-form login-form-login login"
-			onSubmit={handleFormSubmit}>
+		<form className="login-form login-form-login login" onSubmit={handleFormSubmit}>
 			<p className="login-form-row login-form-row--wide form-row form-row-wide">
 				<label htmlFor="username">
 					Username or email address&nbsp;
@@ -38,8 +110,8 @@ const LoginForm = () => {
 					className="login-Input login-Input--text input-text"
 					name="username"
 					id="username"
-					value={userName}
-					onChange={(e) => setUserName(e.target.value)}
+					value={memberNick}
+					onChange={(e) => setMemberNick(e.target.value)}
 				/>
 			</p>
 
@@ -51,17 +123,14 @@ const LoginForm = () => {
 				<span className="password-input">
 					<input
 						className="login-Input login-Input--text input-text"
-						type={passwordVisible ? "text" : "password"}
+						type={passwordVisible ? 'text' : 'password'}
 						name="password"
 						id="password"
 						autoComplete="current-password"
-						value={password}
-						onChange={(e) => setPassword(e.target.value)}
+						value={memberPassword}
+						onChange={(e) => setMemberPassword(e.target.value)}
 					/>
-					<span
-						className="show-password-input"
-						role="button"
-						onClick={togglePasswordVisibility}></span>
+					<span className="show-password-input" role="button" onClick={togglePasswordVisibility}></span>
 				</span>
 			</p>
 
@@ -70,7 +139,8 @@ const LoginForm = () => {
 					type="submit"
 					className="login-button button login-form-login__submit wp-element-button"
 					name="login"
-					value="Log in">
+					value="Log in"
+				>
 					Log in
 				</button>
 			</p>

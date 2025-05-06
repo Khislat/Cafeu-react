@@ -13,12 +13,15 @@ import './style/responsive.css';
 import { CafeuProvider } from './context/CafeuContext';
 import { store } from './store';
 import App from './App';
+import ContextProvider from './components/context/ContextProvider';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<CafeuProvider>
 		<Provider store={store}>
-			<App />
-			<ToastContainer />
+			<ContextProvider>
+				<App />
+				<ToastContainer />
+			</ContextProvider>
 		</Provider>
 	</CafeuProvider>,
 );

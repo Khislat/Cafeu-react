@@ -13,8 +13,17 @@ import SignupPage from './pages/SignupPage';
 import UserPage from './pages/UserPage';
 import OrdersPage from './components/oredersPage';
 import HomePage from './components/HomePage/HomePage1';
+import { useState } from 'react';
+import { useGlobals } from './components/hooks/useGlobals';
 
 function App() {
+	const { setAuthMember } = useGlobals();
+	const [loginOpen, setLoginOpen] = useState<boolean>(false);
+	
+
+	/** HANDLERS **/
+	const handleLoginClose = () => setLoginOpen(false);
+
 	return (
 		<Router>
 			<Routes>
