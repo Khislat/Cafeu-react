@@ -191,13 +191,6 @@ const MenuSection = () => {
 		setProductSearch({ ...productSearch });
 	};
 
-
-	// const chooseDishHandlear = (id: string) => {
-	// 	history.push(`/products/${id}`);
-	// };
-
-	// const { activeMenuTab, handleMenuTabChange, filteredItemList, addToCart, wishlisttoast, wishlist } = useCafeuContext();
-
 	return (
 		<section>
 			<div className="all-product all-product-1 menu-section-container">
