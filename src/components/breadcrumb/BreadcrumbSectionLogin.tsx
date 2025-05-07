@@ -34,7 +34,7 @@ const BreadcrumbSectionn: React.FC<BreadcrumbSectionProps> = ({
 								/
 							</span>
 							<Link
-								to="/my-account"
+								to="/login"
 								className="page-route-link"
 								style={{ fontSize: "30px", color: "#cc3333" }} >
 								Login

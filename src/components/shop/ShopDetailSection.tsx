@@ -3,6 +3,7 @@ import ShopDescription from './ShopDescription';
 import ProductInfo from './ProductInfo';
 import ProductLightBoxModal from '../modal/ProductLightBoxModal';
 import { serverApi } from '../../../libs/config';
+
 interface ShopDetailsProp {
 	shopData: {
 		productImages: string[];

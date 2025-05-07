@@ -3587,7 +3587,6 @@ tbody.table-body-text {
 
 .view-img img {
 	width: 100%;
-	
 }
 
 .rating-div {
@@ -11999,6 +11998,7 @@ a.custom-btn-2:hover {
 	font-size: 16px;
 	line-height: 18px;
 	color: #140342;
+	margin-left: 8px;
 }
 
 .user-page .settings .media-change-box p {
@@ -12009,6 +12009,7 @@ a.custom-btn-2:hover {
 	font-size: 14px;
 	line-height: 16px;
 	color: #4f547b;
+	margin-left: 8px;
 }
 
 .user-page .settings .up-del-box {
@@ -12020,6 +12021,7 @@ a.custom-btn-2:hover {
 	border-radius: 8px;
 	justify-content: center;
 	align-items: center;
+	margin-left: 8px;
 }
 
 .user-page .settings .up-del-box input {
@@ -12039,7 +12041,8 @@ a.custom-btn-2:hover {
 	justify-content: flex-end;
 	margin-top: 25px;
 }
-/*Cart*/
+/* BASKET */
+
 .basket-frame {
 	position: relative;
 	padding: 10px 4px 0px 4px;
@@ -12058,10 +12061,10 @@ a.custom-btn-2:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background: red;
+	background: #d7b586;
 	border-width: 1px 0px;
 	border-style: solid;
-	border-color: red;
+	border-color: #343434;
 }
 
 .basket-frame .basket-info-box {
@@ -12072,6 +12075,21 @@ a.custom-btn-2:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+.basket-frame .col-2 {
+	display: flex;
+	flex-direction: row;
+
+}
+.basket-frame .col-2 .add {
+	font-size: 20px;
+}
+.basket-frame .col-2 .remove {
+	font-size: 20px;
+}
+
+.basket-frame .basket-info-box button{
+	cursor: pointer;
 }
 
 .basket-info-box .product-img {
@@ -12084,7 +12102,7 @@ a.custom-btn-2:hover {
 .basket-info-box .product-name {
 	margin-left: 11px;
 	width: 185px;
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -12094,7 +12112,7 @@ a.custom-btn-2:hover {
 
 .basket-info-box .product-price {
 	width: 80px;
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
@@ -12102,7 +12120,8 @@ a.custom-btn-2:hover {
 	color: #ae0000;
 }
 
-.basket-info-box .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+.basket-info-box
+	.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
 	padding: 6.5px 14px;
 }
 
@@ -12131,7 +12150,7 @@ a.custom-btn-2:hover {
 .basket-order .price {
 	width: 200px;
 	display: flex;
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -12171,6 +12190,7 @@ a.custom-btn-2:hover {
 	display: flex;
 	flex-direction: column;
 }
+
 /* Orders */
 
 .order-page {

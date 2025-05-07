@@ -1,72 +1,122 @@
-import { NavLink } from "react-router-dom";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import Basket from "../HomePage/Basket";
+import { NavLink } from 'react-router-dom';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Basket from '../HomePage/Basket';
+import { useGlobals } from '../hooks/useGlobals';
+import { ListItemIcon, Menu, MenuItem } from '@mui/material';
+import { Logout } from '@mui/icons-material';
+import { serverApi } from '../../../libs/config';
 // import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavigationSection = () => {
-	const authMember = true;
+interface HomeNavbarProps {
+	handleLogoutClick: (e: React.MouseEvent<HTMLElement>) => void;
+	anchorEl: HTMLElement | null;
+	handleCloseLogout: () => void;
+	handleLogoutRequest: () => void;
+}
+
+const NavigationSection = (props: HomeNavbarProps) => {
+	const { handleLogoutClick, anchorEl, handleCloseLogout, handleLogoutRequest } = props;
+	const { authMember } = useGlobals();
 
 	return (
 		<nav className="cf-header-menu" id="header-menu">
-			{authMember ? (
-				<ul>
-					<li>
-						<NavLink to="/">Home</NavLink>
-					</li>
-					<li>
-						<NavLink to="/menu">Menu</NavLink>
-					</li>
+			<ul>
+				<li>
+					<NavLink to="/">Home</NavLink>
+				</li>
+				<li>
+					<NavLink to="/menu">Menu</NavLink>
+				</li>
+				{authMember ? (
 					<li>
 						<NavLink to="/shop">Shop</NavLink>
 					</li>
+				) : null}
+
+				{authMember ? (
 					<li>
 						<NavLink to="/cart">
 							{/* <ShoppingCartIcon /> */}
 							Orders
 						</NavLink>
 					</li>
+				) : null}
 
-					<li>
-						<NavLink to="/blog-grid">Blog</NavLink>
-					</li>
+				<li>
+					<NavLink to="/blog-grid">Blog</NavLink>
+				</li>
 
+				<li>
+					<NavLink to="/faq">FAQ</NavLink>
+				</li>
+				{authMember ? (
 					<li>
-						<NavLink to="/faq">FAQ</NavLink>
+						<NavLink to="/my-page">My Page</NavLink>
 					</li>
-					<li>
-						<Basket />
-					</li>
-					<li>
-						<NavLink to="/userpage">
-							<AccountCircleIcon fontSize="large" />
-						</NavLink>
-					</li>
-					
-				</ul>
-			) : (
-				<ul>
-					<li>
-						<NavLink to="/">Home</NavLink>
-					</li>
-					<li>
-						<NavLink to="/menu">Menu</NavLink>
-					</li>
+				) : null}
 
-					<li>
-						<NavLink to="/blog-grid">Blog</NavLink>
-					</li>
+				<li>
+					<Basket />
+				</li>
 
+				{!authMember ? (
 					<li>
-						<NavLink to="/faq">FAQ</NavLink>
+						<NavLink to="/login">Register</NavLink>
 					</li>
-					<li>
-						<NavLink to="/my-account">Register</NavLink>
-					</li>
-					<li>
-						<Basket />
-					</li>
-				</ul>
-			)}
+				) : (
+					<img
+						className="user-avatar"
+						src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : 'img/icon/user-icon.svg'}
+						aria-haspopup="true"
+						onClick={handleLogoutClick}
+						style={{ cursor: 'pointer' }}
+					/>
+				)}
+			</ul>
+
+			<Menu
+				anchorEl={anchorEl}
+				id="account-menu"
+				open={Boolean(anchorEl)}
+				onClose={handleCloseLogout}
+				onClick={handleCloseLogout}
+				PaperProps={{
+					elevation: 0,
+					sx: {
+						overflow: 'visible',
+						backgroundColor: '#f5f5f5',
+						boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
+						mt: 1.5,
+						'& .MuiAvatar-root': {
+							width: 32,
+							height: 32,
+							ml: -0.5,
+							mr: 1,
+						},
+						'&:before': {
+							content: '""',
+							display: 'block',
+							position: 'absolute',
+							top: 0,
+							right: 14,
+							width: 10,
+							height: 10,
+							bgcolor: 'background.paper',
+							transform: 'translateY(-50%) rotate(45deg)',
+							zIndex: 0,
+						},
+					},
+				}}
+				transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+				anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+			>
+				<MenuItem onClick={handleLogoutRequest}>
+					<ListItemIcon>
+						<Logout fontSize="small" style={{ color: 'disabled' }} />
+					</ListItemIcon>
+					Logout
+				</MenuItem>
+			</Menu>
 		</nav>
 	);
 };

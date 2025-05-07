@@ -83,6 +83,7 @@ const LoginForm = (props: AuthenticationModalProps) => {
 				return;
 			} else {
 				toast.success('Signed in successfully!', { position: 'top-right' });
+				navigate('/');
 			}
 
 			setAuthMember(result);

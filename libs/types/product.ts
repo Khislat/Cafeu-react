@@ -1,4 +1,5 @@
-import { ProductCollection, ProductSize, ProductStatus } from "../enums/product.enum";
+import { ProductCollection, ProductSize, ProductStatus } from '../enums/product.enum';
+import { CartItem } from './search';
 
 export interface Product {
 	_id: string;
@@ -12,6 +13,7 @@ export interface Product {
 	productDesc?: string;
 	productImages: string[];
 	productViews: number;
+	onAdd: (item: CartItem) => void;
 	createdAt: Date;
 	updatedAt: Date;
 }

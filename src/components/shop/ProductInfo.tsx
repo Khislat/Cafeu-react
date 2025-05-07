@@ -1,6 +1,7 @@
-import { useCafeuContext } from "../../context/CafeuContext";
-import React, { ChangeEvent, useState } from "react";
-import { Form } from "react-bootstrap";
+import { useCafeuContext } from '../../context/CafeuContext';
+import React, { ChangeEvent, useState } from 'react';
+import { Form } from 'react-bootstrap';
+import useBasket from '../hooks/useBasket';
 interface InfoProp {
 	shopData: {
 		productImages: string[];
@@ -10,8 +11,10 @@ interface InfoProp {
 	};
 }
 const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
+	const { onAdd } = useBasket();
+	console.log('onAdd', onAdd);
 	const authMember = true;
-	const { addToCartWithQuantity, addToWishlist } = useCafeuContext();
+	// const { addToCartWithQuantity, addToWishlist } = useCafeuContext();
 	const [quantity, setQuantity] = useState<number>(1); // Initialize quantity state
 
 	const handleQuantityChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -25,23 +28,23 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 			<div className="rating-div">
 				<ul className="rating">
 					<li>
-						{" "}
+						{' '}
 						<span className="icofont-ui-rating"></span>
 					</li>
 					<li>
-						{" "}
+						{' '}
 						<span className="icofont-ui-rating"></span>
 					</li>
 					<li>
-						{" "}
+						{' '}
 						<span className="icofont-ui-rating"></span>
 					</li>
 					<li>
-						{" "}
+						{' '}
 						<span className="icofont-ui-rating"></span>
 					</li>
 					<li>
-						{" "}
+						{' '}
 						<span className="icofont-ui-rating unrated"></span>
 					</li>
 				</ul>
@@ -65,9 +68,8 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 				</li>
 			</ul>
 			<p className="sm-des">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, se d mod tempor
-				ncididunt ut abore et dolore magna aliqua. Quis ipsum pendisse ultrices
-				gravida.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, se d mod tempor ncididunt ut abore et dolore magna
+				aliqua. Quis ipsum pendisse ultrices gravida.
 			</p>
 			{authMember ? (
 				<div className="size-qty">
@@ -87,10 +89,7 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 						<label htmlFor="exampleFormControlInput1" className="form-label">
 							QTY
 						</label>
-						<Form.Select
-							className="wide"
-							onChange={handleQuantityChange}
-							value={quantity ?? ""}>
+						<Form.Select className="wide" onChange={handleQuantityChange} value={quantity ?? ''}>
 							<option data-display="Select">Select</option>
 							<option value={1}>1</option>
 							<option value={2}>2</option>
@@ -105,18 +104,28 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 			{authMember ? (
 				<div className="cart-sec">
 					<div className="btn-sec">
-						{/* <a
+						<a
 							className="custom-btn"
 							role="button"
-							onClick={() => addToCartWithQuantity(shopData._id, quantity)}>
+							onClick={(e) => {
+								onAdd({
+									_id: shopData._id,
+									quantity: 1,
+									name: shopData.productName,
+									price: shopData.productPrice,
+									image: shopData.productImages[0],
+								});
+								e.stopPropagation();
+							}}
+						>
 							Add To Cart
 						</a>
-						<a
+						{/* <a
 							className="custom-btn"
 							role="button"
 							onClick={() => addToWishlist(shopData.id)}>
 							Add To Wishlist
-						</a> */}
+						</a> * */}
 					</div>
 				</div>
 			) : null}

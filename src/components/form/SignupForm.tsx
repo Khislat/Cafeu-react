@@ -4,12 +4,14 @@ import { toast } from 'react-toastify';
 import { useGlobals } from '../hooks/useGlobals';
 import { MemberInput } from '../../../libs/types/member';
 import MemberService from '../../services/MemberService';
+import { useNavigate } from 'react-router-dom';
 
 const SignupForm = () => {
 	const { passwordVisible, togglePasswordVisibility } = useCafeuContext();
 	const [memberNick, setMemberNick] = useState<string>('');
 	const [memberPhone, setMemberPhone] = useState<string>('');
 	const [memberPassword, setMemberPassword] = useState<string>('');
+	const navigate = useNavigate();
 	const { setAuthMember } = useGlobals();
 
 	/** HANDLERS **/
@@ -30,6 +32,7 @@ const SignupForm = () => {
 			setMemberNick('');
 			setMemberPhone('');
 			setMemberPassword('');
+			navigate('/');
 		}
 
 		const signupInput: MemberInput = {

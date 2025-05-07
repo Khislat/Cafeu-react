@@ -1,4 +1,4 @@
-import UserPageForm from "../form/UserPageForm";
+import UserPageForm from "../authUserPage/UserPageForm";
 
 
 const UserPageSection = () => {
