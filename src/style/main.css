@@ -12304,6 +12304,7 @@ a.custom-btn-2:hover {
 	width: 18px;
 	height: 17.36px;
 	color: #6d778b;
+	margin-top: -17px;
 }
 
 .order-page .order-main-box .total-price-box {
@@ -12341,6 +12342,7 @@ a.custom-btn-2:hover {
 	width: 13.76px;
 	height: 14.05px;
 	color: #6d778b;
+	margin-top: -17px;
 }
 
 .order-page .order-main-box .total-price-box p {
@@ -12482,7 +12484,7 @@ a.custom-btn-2:hover {
 	color: #2e3a59;
 	display: flex;
 	position: relative;
-	left: -60px;
+	left: -100px;
 }
 
 .order-page .order-right .order-user-address .user-address-txt {
@@ -12493,7 +12495,7 @@ a.custom-btn-2:hover {
 	letter-spacing: 0%;
 	color: rgb(0, 0, 0);
 	position: relative;
-	left: -60px;
+	left: -100px;
 }
 
 .order-page .order-right .order-payment-box {
