@@ -18,8 +18,10 @@ import { useGlobals } from './components/hooks/useGlobals';
 import { sweetErrorHandling, sweetTopSuccessAlert } from '../libs/sweetAlert';
 import MemberService from './services/MemberService';
 import { Messages } from '../libs/config';
+import useBasket from './components/hooks/useBasket';
 
 function App() {
+	const { cartItems, onAdd, onRemove, onDelete, onDeleteAll } = useBasket();
 	const { setAuthMember } = useGlobals();
 	const [loginOpen, setLoginOpen] = useState<boolean>(false);
 	const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
@@ -52,6 +54,11 @@ function App() {
 					path="/"
 					element={
 						<HomePage
+							cartItems={cartItems}
+							onAdd={onAdd}
+							onRemove={onRemove}
+							onDelete={onDelete}
+							onDeleteAll={onDeleteAll}
 							anchorEl={anchorEl}
 							handleLogoutClick={handleLogoutClick}
 							handleCloseLogout={handleCloseLogout}

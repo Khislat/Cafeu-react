@@ -5,6 +5,7 @@ import { useGlobals } from '../hooks/useGlobals';
 import { ListItemIcon, Menu, MenuItem } from '@mui/material';
 import { Logout } from '@mui/icons-material';
 import { serverApi } from '../../../libs/config';
+import { CartItem } from '../../../libs/types/search';
 // import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 interface HomeNavbarProps {
@@ -12,10 +13,25 @@ interface HomeNavbarProps {
 	anchorEl: HTMLElement | null;
 	handleCloseLogout: () => void;
 	handleLogoutRequest: () => void;
+	cartItems: CartItem[];
+	onAdd: (item: CartItem) => void;
+	onRemove: (item: CartItem) => void;
+	onDelete: (item: CartItem) => void;
+	onDeleteAll: () => void;
 }
 
 const NavigationSection = (props: HomeNavbarProps) => {
-	const { handleLogoutClick, anchorEl, handleCloseLogout, handleLogoutRequest } = props;
+	const {
+		handleLogoutClick,
+		anchorEl,
+		handleCloseLogout,
+		handleLogoutRequest,
+		cartItems,
+		onAdd,
+		onRemove,
+		onDelete,
+		onDeleteAll,
+	} = props;
 	const { authMember } = useGlobals();
 
 	return (
@@ -56,7 +72,13 @@ const NavigationSection = (props: HomeNavbarProps) => {
 				) : null}
 
 				<li>
-					<Basket />
+					<Basket
+						cartItems={cartItems}
+						onAdd={onAdd}
+						onRemove={onRemove}
+						onDelete={onDelete}
+						onDeleteAll={onDeleteAll}
+					/>
 				</li>
 
 				{!authMember ? (

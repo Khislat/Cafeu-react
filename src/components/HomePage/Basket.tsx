@@ -6,6 +6,8 @@ import Menu from '@mui/material/Menu';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import CancelIcon from '@mui/icons-material/Cancel';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 import OrderService from '../../services/OrderService';
 import useBasket from '../hooks/useBasket';
@@ -14,9 +16,17 @@ import { useNavigate } from 'react-router-dom';
 import { CartItem } from '../../../libs/types/search';
 import { Messages, serverApi } from '../../../libs/config';
 import { sweetErrorHandling } from '../../../libs/sweetAlert';
+interface BasketProps {
+	cartItems: CartItem[];
+	onAdd: (item: CartItem) => void;
+	onRemove: (item: CartItem) => void;
+	onDelete: (item: CartItem) => void;
+	onDeleteAll: () => void;
+}
 
-export default function Basket() {
+export default function Basket(props: BasketProps) {
 	const { cartItems, onAdd, onRemove, onDelete, onDeleteAll } = useBasket();
+
 	const { authMember, setOrderBuilder } = useGlobals();
 	const navigate = useNavigate();
 	const itemsPrice: number = cartItems.reduce((a: number, c: CartItem) => a + c.quantity * c.price, 0);
@@ -125,22 +135,48 @@ export default function Basket() {
 								return (
 									<Box className={'basket-info-box'} key={item._id}>
 										<div className={'cancel-btn'}>
-											<CancelIcon color={'primary'} onClick={() => onDelete(item)} />
+											<IconButton
+												onClick={() => onDelete(item)}
+												color="primary"
+												size="small"
+												sx={{
+													position: 'absolute',
+													top: -2,
+													right: 5,
+													backgroundColor: '#e3f2fd', // och ko‘k fon
+													'&:hover': {
+														backgroundColor: '#bbdefb', // hoverda biroz to‘qroq ko‘k
+													},
+												}}
+											>
+												<CancelIcon fontSize="small" />
+											</IconButton>
 										</div>
 										<img src={imagePath} className={'product-img'} />
 										<span className={'product-name'}>{item.name}</span>
 										<p className={'product-price'}>
 											${item.price} x {item.quantity}
 										</p>
-										<Box sx={{ minWidth: 120 }}>
-											<div className="col-2">
-												<Button onClick={() => onRemove(item)} className="remove">
-													-
-												</Button>{' '}
-												<Button onClick={() => onAdd(item)} className="add">
-													+
-												</Button>
-											</div>
+										<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+											<IconButton
+												onClick={() => onRemove(item)}
+												color="primary"
+												size="small"
+												sx={{ border: '1px solid #ccc' }}
+											>
+												<RemoveIcon />
+											</IconButton>
+
+											<span>{item.quantity}</span>
+
+											<IconButton
+												onClick={() => onAdd(item)}
+												color="primary"
+												size="small"
+												sx={{ border: '1px solid #ccc' }}
+											>
+												<AddIcon />
+											</IconButton>
 										</Box>
 									</Box>
 								);

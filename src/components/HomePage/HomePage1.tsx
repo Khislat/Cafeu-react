@@ -1,3 +1,4 @@
+import { CartItem } from '../../../libs/types/search';
 import { useGlobals } from '../hooks/useGlobals';
 import Header from './Header';
 import HomeMain from './HomeMain1';
@@ -10,11 +11,27 @@ interface HomeNavbarProps {
 	anchorEl: HTMLElement | null;
 	handleCloseLogout: () => void;
 	handleLogoutRequest: () => void;
+	cartItems: CartItem[];
+	onAdd: (item: CartItem) => void;
+	onRemove: (item: CartItem) => void;
+	onDelete: (item: CartItem) => void;
+	onDeleteAll: () => void;
 }
 
 const HomePage = (props: HomeNavbarProps) => {
 	const { setAuthMember } = useGlobals();
-	const { handleLogoutClick, anchorEl, handleCloseLogout, handleLogoutRequest } = props;
+	const {
+		cartItems,
+		onAdd,
+		onRemove,
+		onDelete,
+		onDeleteAll,
+		handleLogoutClick,
+		anchorEl,
+		handleCloseLogout,
+		handleLogoutRequest,
+		
+	} = props;
 	return (
 		<div className="wrapper">
 			<Header
@@ -23,6 +40,11 @@ const HomePage = (props: HomeNavbarProps) => {
 				handleLogoutClick={handleLogoutClick}
 				handleCloseLogout={handleCloseLogout}
 				handleLogoutRequest={handleLogoutRequest}
+				cartItems={cartItems}
+				onAdd={onAdd}
+				onRemove={onRemove}
+				onDelete={onDelete}
+				onDeleteAll={onDeleteAll}
 			/>
 			<HomeMain />
 			<VideoModal />

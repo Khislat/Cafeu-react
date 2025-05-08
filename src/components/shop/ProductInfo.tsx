@@ -12,7 +12,6 @@ interface InfoProp {
 }
 const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 	const { onAdd } = useBasket();
-	console.log('onAdd', onAdd);
 	const authMember = true;
 	// const { addToCartWithQuantity, addToWishlist } = useCafeuContext();
 	const [quantity, setQuantity] = useState<number>(1); // Initialize quantity state
@@ -110,7 +109,7 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 							onClick={(e) => {
 								onAdd({
 									_id: shopData._id,
-									quantity: 1,
+									quantity: quantity,
 									name: shopData.productName,
 									price: shopData.productPrice,
 									image: shopData.productImages[0],

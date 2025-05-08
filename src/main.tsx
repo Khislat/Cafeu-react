@@ -17,11 +17,11 @@ import ContextProvider from './components/context/ContextProvider';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<CafeuProvider>
-		<Provider store={store}>
-			<ContextProvider>
+		<ContextProvider>
+			<Provider store={store}>
 				<App />
 				<ToastContainer />
-			</ContextProvider>
-		</Provider>
+			</Provider>
+		</ContextProvider>
 	</CafeuProvider>,
 );

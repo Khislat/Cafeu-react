@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationSection from '../navigation/NavigationSection';
 import { useCafeuContext } from '../../context/CafeuContext';
 import { Link } from 'react-router-dom';
+import { CartItem } from '../../../libs/types/search';
 
 interface HeaderProps {
 	style: string;
@@ -9,10 +10,26 @@ interface HeaderProps {
 	anchorEl: HTMLElement | null;
 	handleCloseLogout: () => void;
 	handleLogoutRequest: () => void;
+	cartItems: CartItem[];
+	onAdd: (item: CartItem) => void;
+	onRemove: (item: CartItem) => void;
+	onDelete: (item: CartItem) => void;
+	onDeleteAll: () => void;
 }
 
 const Header = (props: HeaderProps) => {
-	const { handleLogoutClick, anchorEl, handleCloseLogout, handleLogoutRequest, style } = props;
+	const {
+		handleLogoutClick,
+		anchorEl,
+		handleCloseLogout,
+		handleLogoutRequest,
+		style,
+		cartItems,
+		onAdd,
+		onRemove,
+		onDelete,
+		onDeleteAll,
+	} = props;
 	const { isHeaderFixed, openSearchbarModal, openSidebar } = useCafeuContext();
 
 	return (
@@ -32,6 +49,11 @@ const Header = (props: HeaderProps) => {
 									handleLogoutClick={handleLogoutClick}
 									handleCloseLogout={handleCloseLogout}
 									handleLogoutRequest={handleLogoutRequest}
+									cartItems={cartItems}
+									onAdd={onAdd}
+									onRemove={onRemove}
+									onDelete={onDelete}
+									onDeleteAll={onDeleteAll}
 								/>
 							</div>
 							<div className="header-right-search-phone d-none d-lg-block ml-35">
