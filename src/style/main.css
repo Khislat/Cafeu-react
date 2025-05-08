@@ -12061,10 +12061,10 @@ a.custom-btn-2:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background: #d7b586;
+	background: #F2F2F2;
 	border-width: 1px 0px;
 	border-style: solid;
-	border-color: #343434;
+	border-color: #F2F2F2;
 }
 
 .basket-frame .basket-info-box {

@@ -56,7 +56,7 @@ export default function Basket(props: BasketProps) {
 			onDeleteAll();
 
 			setOrderBuilder(new Date());
-			navigate('/orders');
+			navigate('/cart');
 		} catch (err) {
 			console.log(err);
 			sweetErrorHandling(err).then();
@@ -73,7 +73,7 @@ export default function Basket(props: BasketProps) {
 				aria-expanded={open ? 'true' : undefined}
 				onClick={handleClick}
 			>
-				<Badge badgeContent={cartItems.length} color="secondary">
+				<Badge badgeContent={cartItems.length} color="primary">
 					<ShoppingCartIcon color="action" />
 				</Badge>
 			</IconButton>
@@ -188,7 +188,17 @@ export default function Basket(props: BasketProps) {
 							<span className={'price'}>
 								Total: ${totalPrice} ({itemsPrice} + {shippingCost})
 							</span>
-							<Button onClick={proceedOrderHandlear} startIcon={<ShoppingCartIcon />} variant={'contained'}>
+							<Button
+								onClick={proceedOrderHandlear}
+								startIcon={<ShoppingCartIcon />}
+								variant={'contained'}
+								sx={{
+									backgroundColor: '#1876d1',
+									'&:hover': {
+										backgroundColor: '#2479c9', // hover holatida biroz quyuqroq rang
+									},
+								}}
+							>
 								Order
 							</Button>
 						</Box>

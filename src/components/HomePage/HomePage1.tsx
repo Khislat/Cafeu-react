@@ -30,16 +30,11 @@ const HomePage = (props: HomeNavbarProps) => {
 		anchorEl,
 		handleCloseLogout,
 		handleLogoutRequest,
-		
 	} = props;
 	return (
 		<div className="wrapper">
 			<Header
 				style={'header-1'}
-				anchorEl={anchorEl}
-				handleLogoutClick={handleLogoutClick}
-				handleCloseLogout={handleCloseLogout}
-				handleLogoutRequest={handleLogoutRequest}
 				cartItems={cartItems}
 				onAdd={onAdd}
 				onRemove={onRemove}

@@ -6,10 +6,6 @@ import { CartItem } from '../../../libs/types/search';
 
 interface HeaderProps {
 	style: string;
-	handleLogoutClick: (e: React.MouseEvent<HTMLElement>) => void;
-	anchorEl: HTMLElement | null;
-	handleCloseLogout: () => void;
-	handleLogoutRequest: () => void;
 	cartItems: CartItem[];
 	onAdd: (item: CartItem) => void;
 	onRemove: (item: CartItem) => void;
@@ -18,18 +14,7 @@ interface HeaderProps {
 }
 
 const Header = (props: HeaderProps) => {
-	const {
-		handleLogoutClick,
-		anchorEl,
-		handleCloseLogout,
-		handleLogoutRequest,
-		style,
-		cartItems,
-		onAdd,
-		onRemove,
-		onDelete,
-		onDeleteAll,
-	} = props;
+	const { style, cartItems, onAdd, onRemove, onDelete, onDeleteAll } = props;
 	const { isHeaderFixed, openSearchbarModal, openSidebar } = useCafeuContext();
 
 	return (
@@ -45,10 +30,6 @@ const Header = (props: HeaderProps) => {
 						<div className="header-right">
 							<div className="header-menu d-none d-lg-block">
 								<NavigationSection
-									anchorEl={anchorEl}
-									handleLogoutClick={handleLogoutClick}
-									handleCloseLogout={handleCloseLogout}
-									handleLogoutRequest={handleLogoutRequest}
 									cartItems={cartItems}
 									onAdd={onAdd}
 									onRemove={onRemove}
