@@ -6,7 +6,7 @@ const CartPage = () => {
 	return (
 		<div className="wrapper">
 			<Layout>
-				<BreadcrumbSection header="Cart Page" title="Cart" />
+				<BreadcrumbSection header="Orders Page" title="Orders" />
 				<CartSection />
 			</Layout>
 		</div>

@@ -14,7 +14,6 @@ import { createSelector } from 'reselect';
 import { Product } from '../../libs/types/product';
 import { retriveChosenProduct } from '../Redux/homePage/selector';
 import ProductService from '../services/ProductService';
-import useBasket from '../components/hooks/useBasket';
 
 const actionDispatch = (dispatch: Dispatch) => ({
 	setChosenProduct: (data: Product) => dispatch(setChosenProduct(data)),
@@ -28,7 +27,6 @@ const ShopDetailsPage = () => {
 	const { productId } = useParams();
 	const { setChosenProduct } = actionDispatch(useDispatch());
 	const { chosenProduct } = useSelector(chosenProductRetriever);
-	const { cartItems, onAdd, onRemove, onDelete, onDeleteAll } = useBasket();
 
 	useEffect(() => {
 		const product = new ProductService();

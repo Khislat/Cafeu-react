@@ -5,10 +5,13 @@ import { retrieveAllMenu } from '../../Redux/shopPage/selector';
 import { Product, ProductInquiry } from '../../../libs/types/product';
 import { setAllMenu } from '../../Redux/shopPage/slice';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, ChangeEvent } from 'react';
 import ProductService from '../../services/ProductService';
 import { ProductCollection } from '../../../libs/enums/product.enum';
 import { serverApi } from '../../../libs/config';
+import { useNavigate } from 'react-router-dom';
+import useBasket from '../hooks/useBasket';
+import { toast } from 'react-toastify';
 
 /** REDUX SLICE & SELECTOR **/
 const allMenuRetriever = createSelector(retrieveAllMenu, (allMenu) => ({ allMenu }));
@@ -27,6 +30,9 @@ const ShopAllProductSection = () => {
 
 		search: '',
 	});
+	const [searchText, setSearchText] = useState<string>('');
+	const navigation = useNavigate();
+	const { onAdd } = useBasket();
 
 	useEffect(() => {
 		// Backend server data fetch = Data
@@ -38,6 +44,32 @@ const ShopAllProductSection = () => {
 			})
 			.catch((err) => console.log(err));
 	}, [productSearch]);
+
+	const searchCollectionHandler = (collection: ProductCollection) => {
+		productSearch.page = 1;
+		productSearch.productCollection = collection;
+		setProductSearch({ ...productSearch });
+	};
+
+	const searchOrderHandlear = (order: string) => {
+		productSearch.page = 1;
+		productSearch.order = order;
+		setProductSearch({ ...productSearch });
+	};
+
+	const searchProductHandlear = () => {
+		productSearch.search = searchText;
+		setProductSearch({ ...productSearch });
+	};
+
+	const paginationHandlear = (e: ChangeEvent<any>, value: number) => {
+		productSearch.page = value;
+		setProductSearch({ ...productSearch });
+	};
+
+	const chooseDishHandlear = (id: string) => {
+		navigation(`/products/${id}`);
+	};
 
 	const {
 		currentItems,
@@ -80,19 +112,33 @@ const ShopAllProductSection = () => {
 												</a>
 												{item.productPrice && <span className="shop-onsale">Sale!</span>}
 												<div className="shop-product-action">
-													{/* <a
-													role="button"
-													onClick={() => addToWishlist(item._id)}
-													className={wishlist.some((wishlistItem) => wishlistItem.id === item.id) ? 'active' : ''}
-												>
-													<i className="icofont-heart-alt"></i>
-												</a> */}
-													{/* <a role="button" onClick={() => addToCart(item.id)}>
-													<i className="icofont-shopping-cart"></i>
-												</a>
-												<a role="button" onClick={() => openLightBoxModal(item)}>
-													<i className="icofont-eye"></i>
-												</a> */}
+													<a
+														role="button"
+														onClick={(e) => {
+															e.preventDefault(); // sahifa reload bo‘lmasin
+															toast.success('Successfully added to wishlist!');
+														}}
+													>
+														<i className="icofont-heart-alt"></i>
+													</a>
+													<a
+														role="button"
+														onClick={(e) => {
+															onAdd({
+																_id: item._id,
+																quantity: 1,
+																name: item.productName,
+																price: item.productPrice,
+																image: item.productImages[0],
+															});
+															e.stopPropagation();
+														}}
+													>
+														<i className="icofont-shopping-cart"></i>
+													</a>
+													<a role="button">
+														<i className="icofont-eye"></i>
+													</a>
 												</div>
 											</div>
 											<div className="shop-product-content">

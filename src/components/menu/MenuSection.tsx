@@ -146,6 +146,9 @@ import MemberService from '../../services/MemberService';
 import ProductService from '../../services/ProductService';
 import { setSpecialDishes } from '../../Redux/homePage/slice';
 import { Dispatch } from '@reduxjs/toolkit';
+import useBasket from '../hooks/useBasket';
+import { useGlobals } from '../hooks/useGlobals';
+import { toast, ToastContainer } from 'react-toastify';
 
 /** REDUX SLICE & SELECTOR **/
 const specialDishesReriever = createSelector(retrieveSpecialDishes, (specialDishes) => ({ specialDishes }));
@@ -155,7 +158,8 @@ const actionDispatch = (distpatch: Dispatch) => ({
 });
 
 const MenuSection = () => {
-	const authMember = true;
+	const { onAdd } = useBasket();
+	const { authMember, setAuthMember } = useGlobals();
 	const { specialDishes } = useSelector(specialDishesReriever);
 	const { setSpecialDishes } = actionDispatch(useDispatch());
 	const [productSearch, setProductSearch] = useState<ProductInquiry>({
@@ -300,10 +304,32 @@ const MenuSection = () => {
 													<p className="delivery-text">Delivery Fee : $10</p>
 													{authMember ? (
 														<div className="cart-wishlist">
-															<a className="sm-custom-btn wishlist-btn" role="button">
+															<a
+																href="#"
+																className="sm-custom-btn wishlist-btn"
+																onClick={(e) => {
+																	e.preventDefault(); // sahifa reload bo‘lmasin
+																	toast.success('Successfully added to wishlist!');
+																}}
+															>
 																<span className="icofont-plus"></span>
+																{/* <ToastContainer /> */}
 															</a>
-															<a className="sm-custom-btn cart-btn" role="button">
+															
+															<a
+																className="sm-custom-btn cart-btn"
+																role="button"
+																onClick={(e) => {
+																	onAdd({
+																		_id: product._id,
+																		quantity: 1,
+																		name: product.productName,
+																		price: product.productPrice,
+																		image: product.productImages[0],
+																	});
+																	e.stopPropagation();
+																}}
+															>
 																<span className="icofont-cart-alt"></span>
 															</a>
 														</div>

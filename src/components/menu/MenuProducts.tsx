@@ -11,6 +11,9 @@ import { Product, ProductInquiry } from '../../../libs/types/product';
 import { serverApi } from '../../../libs/config';
 import { ProductCollection } from '../../../libs/enums/product.enum';
 import ProductService from '../../services/ProductService';
+import { toast } from 'react-toastify';
+import useBasket from '../hooks/useBasket';
+import { useGlobals } from '../hooks/useGlobals';
 interface MenuProps {
 	style: string;
 	showMoreBtn: boolean;
@@ -27,8 +30,12 @@ const actionDispatch = (distpatch: Dispatch) => ({
 });
 
 const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => {
+	const { onAdd } = useBasket();
+	const { authMember, setAuthMember } = useGlobals();
 	const { specialMenu } = useSelector(specialMenuRetriever);
 	const { setSpecialMenu } = actionDispatch(useDispatch());
+	const initialMenuItemsToShow = 8;
+	const [menuItemsToShow, setMenuItemsToShow] = useState<number>(initialMenuItemsToShow);
 
 	const [productSearch, setProductSearch] = useState<ProductInquiry>({
 		page: 1,
@@ -61,7 +68,14 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 		setProductSearch({ ...productSearch });
 	};
 
-	const authMember = null;
+	const handleMenuShowMore = () => {
+		// When the "Show More" button is clicked, set itemsToShow to the total number of items in the list
+		setMenuItemsToShow(specialMenu.length);
+	};
+	const handleMenuShowLess = () => {
+		setMenuItemsToShow(initialMenuItemsToShow);
+	};
+
 	const {
 		activeMenuProductTab,
 		handleMenuProductTabChange,
@@ -69,8 +83,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 		addToWishlist,
 		addToCart,
 		openLightBoxModal,
-		handleMenuShowMore,
-		handleMenuShowLess,
+
 		wishlist,
 	} = useCafeuContext();
 	const menuProductItems = specialMenu.slice(0, endIndex);
@@ -96,7 +109,8 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="all"
 													onClick={() => searchCollectionHandler(ProductCollection.ALL)}
 												>
-													<span className="cat-name">All Categories</span>
+													<img src="img/category/icon/7.png" alt="" className="cat-icon" />
+													<span className="cat-name">All </span>
 												</Nav.Link>
 											</Nav.Item>
 											<Nav.Item>
@@ -105,6 +119,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="pizza"
 													onClick={() => searchCollectionHandler(ProductCollection.PIZZA)}
 												>
+													<img src="img/category/icon/1.png" alt="" className="cat-icon" />
 													<span className="cat-name">Pizza</span>
 												</Nav.Link>
 											</Nav.Item>
@@ -114,6 +129,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="asian"
 													onClick={() => searchCollectionHandler(ProductCollection.ASIAN)}
 												>
+													<img src="img/category/icon/2.png" alt="" className="cat-icon" />
 													<span className="cat-name">Asian</span>
 												</Nav.Link>
 											</Nav.Item>
@@ -123,6 +139,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="burger"
 													onClick={() => searchCollectionHandler(ProductCollection.BURGER)}
 												>
+													<img src="img/category/icon/3.png" alt="" className="cat-icon" />
 													<span className="cat-name">Burger</span>
 												</Nav.Link>
 											</Nav.Item>
@@ -132,6 +149,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="salad"
 													onClick={() => searchCollectionHandler(ProductCollection.SALAD)}
 												>
+													<img src="img/category/icon/4.png" alt="" className="cat-icon" />
 													<span className="cat-name">Salad</span>
 												</Nav.Link>
 											</Nav.Item>
@@ -141,6 +159,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="bakery"
 													onClick={() => searchCollectionHandler(ProductCollection.BAKERY)}
 												>
+													<img src="img/category/icon/5.png" alt="" className="cat-icon" />
 													<span className="cat-name">Bakery</span>
 												</Nav.Link>
 											</Nav.Item>
@@ -150,6 +169,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 													eventKey="drink"
 													onClick={() => searchCollectionHandler(ProductCollection.DRINK)}
 												>
+													<img src="img/category/icon/6.png" alt="" className="cat-icon" />
 													<span className="cat-name">Drink</span>
 												</Nav.Link>
 											</Nav.Item>
@@ -196,36 +216,48 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 																{' '}
 																<span className="icofont-ui-rating"></span>
 															</li>
-															{/* <li>
+															<li>
 																{' '}
-																<span className={`icofont-ui-rating ${item.rating ? item.rating : ''}`}></span>
-															</li> */}
+																<span className={`icofont-ui-rating `}></span>
+															</li>
 														</ul>
-														<p className="price">{item.productPrice}</p>
+														<p className="price">{item.productPrice}$</p>
 
 														{authMember ? (
 															<ul className="pd-btn-group">
 																<li>
-																	{/* <a
-																	role="button"
-																	onClick={() => addToWishlist(item._id)}
-																	className={`shop-btn ${
-																		wishlist.some((wishlistItem) => wishlistItem.id === item.id) ? 'active' : ''
-																	}`}
-																>
-																	<span className="icofont-heart-alt"></span>
-																</a> */}
+																	<a
+																		role="button"
+																		onClick={() => toast.success('Successfully added to wishlist!')}
+																		className={`shop-btn 
+																		}`}
+																	>
+																		<span className="icofont-heart-alt"></span>
+																	</a>
 																</li>
-																{/* <li>
-																<a className="shop-btn" role="button" onClick={() => addToCart(item.id)}>
-																	<span className="icofont-shopping-cart"></span>
-																</a>
-															</li> */}
-																{/* <li>
-																<a className="shop-btn" role="button" onClick={() => openLightBoxModal(item)}>
-																	<span className="icofont-eye"></span>
-																</a>
-															</li> */}
+																<li>
+																	<a
+																		className="shop-btn"
+																		role="button"
+																		onClick={(e) => {
+																			onAdd({
+																				_id: item._id,
+																				quantity: 1,
+																				name: item.productName,
+																				price: item.productPrice,
+																				image: item.productImages[0],
+																			});
+																			e.stopPropagation();
+																		}}
+																	>
+																		<span className="icofont-shopping-cart"></span>
+																	</a>
+																</li>
+																<li>
+																	<a className="shop-btn" role="button">
+																		<span className="icofont-eye"></span>
+																	</a>
+																</li>
 															</ul>
 														) : null}
 													</div>
