@@ -34,7 +34,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 	const { authMember, setAuthMember } = useGlobals();
 	const { specialMenu } = useSelector(specialMenuRetriever);
 	const { setSpecialMenu } = actionDispatch(useDispatch());
-	const initialMenuItemsToShow = 8;
+	const initialMenuItemsToShow = 4;
 	const [menuItemsToShow, setMenuItemsToShow] = useState<number>(initialMenuItemsToShow);
 
 	const [productSearch, setProductSearch] = useState<ProductInquiry>({
@@ -86,7 +86,7 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 
 		wishlist,
 	} = useCafeuContext();
-	const menuProductItems = specialMenu.slice(0, endIndex);
+	const menuProductItems = specialMenu.slice(0, menuItemsToShow);
 	return (
 		<section>
 			<div className={`product ${style} cpy-8`}>
@@ -270,11 +270,11 @@ const MenuProducts: React.FC<MenuProps> = ({ style, showMoreBtn, endIndex }) => 
 							{showMoreBtn && (
 								<div className="row">
 									<div className="text-center my-4">
-										{menuProductItems.length === 8 ? (
+										{menuProductItems.length === 4 ? (
 											<a className="custom-btn" role="button" onClick={handleMenuShowMore}>
 												Show More
 											</a>
-										) : menuProductItems.length > 8 ? (
+										) : menuProductItems.length > 4 ? (
 											<a className="custom-btn" role="button" onClick={handleMenuShowLess}>
 												Show Less
 											</a>
