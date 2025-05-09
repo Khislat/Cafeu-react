@@ -12,6 +12,11 @@ import { serverApi } from '../../../libs/config';
 import { useNavigate } from 'react-router-dom';
 import useBasket from '../hooks/useBasket';
 import { toast } from 'react-toastify';
+import Pagination from '@mui/material/Pagination';
+import PaginationItem from '@mui/material/PaginationItem';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Stack } from '@mui/material';
 
 /** REDUX SLICE & SELECTOR **/
 const allMenuRetriever = createSelector(retrieveAllMenu, (allMenu) => ({ allMenu }));
@@ -25,7 +30,7 @@ const ShopAllProductSection = () => {
 	const { setAllMenu } = actionDispatch(useDispatch());
 	const [productSearch, setProductSearch] = useState<ProductInquiry>({
 		page: 1,
-		limit: 20,
+		limit: 10,
 		order: 'createdAt',
 
 		search: '',
@@ -33,6 +38,7 @@ const ShopAllProductSection = () => {
 	const [searchText, setSearchText] = useState<string>('');
 	const navigation = useNavigate();
 	const { onAdd } = useBasket();
+	const [totalCount, setTotalCount] = useState(0);
 
 	useEffect(() => {
 		// Backend server data fetch = Data
@@ -71,11 +77,13 @@ const ShopAllProductSection = () => {
 		navigation(`/products/${id}`);
 	};
 
+	//Calculate total pages
+	const totalPages = Math.ceil(totalCount / productSearch.limit);
+	const currentPage = productSearch.page;
+	const handlePageChange = paginationHandlear;
 	const {
 		currentItems,
-		currentPage,
-		handlePageChange,
-		totalPages,
+
 		openLightBoxModal,
 		addToCart,
 		addToWishlist,
@@ -162,40 +170,31 @@ const ShopAllProductSection = () => {
 							);
 						})}
 					</div>
-					<div className="basic-pagination mb-50 mt-20" data-aos="fade-up" data-aos-duration="400">
-						<ul className="page-numbers">
-							<li>
-								<button
-									disabled={currentPage === 1}
-									onClick={() => handlePageChange(currentPage - 1)}
-									className="page-number-btn"
-								>
-									<i className="icofont-rounded-left"></i>
-								</button>
-							</li>
-							{Array.from({ length: Math.ceil(totalPages) }).map((_, index) => (
-								<li key={index}>
-									<button
-										className={`page-number-btn ${currentPage === index + 1 ? 'current' : ''}`}
-										onClick={() => handlePageChange(index + 1)}
-									>
-										<span aria-current="page" className="page-number">
-											{index + 1}
-										</span>
-									</button>
-								</li>
-							))}
-							<li>
-								<button
-									disabled={currentPage === totalPages}
-									className="page-number-btn"
-									onClick={() => handlePageChange(currentPage + 1)}
-								>
-									<i className="icofont-rounded-right"></i>
-								</button>
-							</li>
-						</ul>
-					</div>
+
+					<Stack className={'pagination-section'}>
+						<Pagination
+							count={allMenu.length !== 0 ? productSearch.page + 1 : productSearch.page}
+							page={productSearch.page}
+							renderItem={(item) => (
+								<PaginationItem
+									components={{
+										previous: ArrowBackIcon,
+										next: ArrowForwardIcon,
+									}}
+									{...item}
+									sx={{
+										color: '#CC3334',
+										borderColor: '#CC3334',
+										'&.Mui-selected': {
+											backgroundColor: '#CC3334',
+											color: 'white',
+										},
+									}}
+								/>
+							)}
+							onChange={paginationHandlear}
+						/>
+					</Stack>
 				</>
 			)}
 		</div>
