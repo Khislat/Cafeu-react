@@ -4,8 +4,6 @@ import { Box, Button, Stack } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 
-
-
 import { Message } from '@mui/icons-material';
 import OrderService from '../../services/OrderService';
 import { retrievePausedOrders } from '../../Redux/ordersPage/selector';
@@ -118,7 +116,18 @@ export default function PausedOrders(props: PausedOrdersProps) {
 								<Button value={order._id} variant="contained" className="cencel-button" onClick={deleteOrderHandlear}>
 									CANCEL
 								</Button>
-								<Button value={order._id} variant="contained" className="payment-button" onClick={processOrderHandlear}>
+								<Button
+									value={order._id}
+									variant="contained"
+									className="payment-button"
+									onClick={processOrderHandlear}
+									sx={{
+										backgroundColor: '#CC3334',
+										'&:hover': {
+											backgroundColor: '#b12c2d', // hover holatida biroz quyuqroq rang
+										},
+									}}
+								>
 									PAYMENT
 								</Button>
 							</Box>

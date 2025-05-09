@@ -141,8 +141,8 @@ export default function Basket(props: BasketProps) {
 												size="small"
 												sx={{
 													position: 'absolute',
-													top: -2,
-													right: 5,
+													
+												
 													backgroundColor: '#e3f2fd', // och ko‘k fon
 													'&:hover': {
 														backgroundColor: '#bbdefb', // hoverda biroz to‘qroq ko‘k
