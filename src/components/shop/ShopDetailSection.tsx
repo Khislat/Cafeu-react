@@ -9,6 +9,7 @@ interface ShopDetailsProp {
 		productImages: string[];
 		productName: string;
 		productPrice: number;
+		productLeftCount: number
 		_id: string;
 	};
 }

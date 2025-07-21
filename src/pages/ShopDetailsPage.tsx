@@ -16,7 +16,7 @@ import { retriveChosenProduct } from '../Redux/homePage/selector';
 import ProductService from '../services/ProductService';
 
 const actionDispatch = (dispatch: Dispatch) => ({
-	setChosenProduct: (data: Product) => dispatch(setChosenProduct(data)),
+	setChosenProduct: (date: Product) => dispatch(setChosenProduct(date)),
 });
 
 const chosenProductRetriever = createSelector(retriveChosenProduct, (chosenProduct) => ({

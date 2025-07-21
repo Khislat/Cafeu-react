@@ -261,7 +261,7 @@ const NavigationSection = (props: NavigationSectionProps) => {
 				) : (
 					<img
 						className="user-avatar"
-						src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : 'img/icon/user-icon.svg'}
+						src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : '/img/icon/user-icon2.svg'}
 						aria-haspopup="true"
 						onClick={handleLogoutClick}
 						style={{ cursor: 'pointer' }}

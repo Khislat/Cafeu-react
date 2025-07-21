@@ -17,7 +17,7 @@ export function Settings() {
 	const navigate = useNavigate();
 	const { authMember, setAuthMember } = useGlobals();
 	const [memberImage, setMemberImage] = useState<string>(
-		authMember?.memberImage ? `${serverApi}/${authMember.memberImage}` : '/icons/default-user.svg',
+		authMember?.memberImage ? `${serverApi}/${authMember.memberImage}` : '/img/icon/user-icon2.svg',
 	);
 	const [memberUpdateInput, setMemberUpdateInput] = useState<MemberUpdateInput>({
 		memberNick: authMember?.memberNick,

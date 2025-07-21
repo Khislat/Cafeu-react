@@ -7,6 +7,7 @@ interface InfoProp {
 		productImages: string[];
 		productName: string;
 		productPrice: number;
+		productLeftCount: number
 		_id: string;
 	};
 }
@@ -88,7 +89,7 @@ const ProductInfo: React.FC<InfoProp> = ({ shopData }) => {
 						<label htmlFor="exampleFormControlInput1" className="form-label">
 							QTY
 						</label>
-						<Form.Select className="wide" onChange={handleQuantityChange} value={quantity ?? ''}>
+						<Form.Select className="wide" onChange={handleQuantityChange} value={shopData.productLeftCount ?? ''}>
 							<option data-display="Select">Select</option>
 							<option value={1}>1</option>
 							<option value={2}>2</option>

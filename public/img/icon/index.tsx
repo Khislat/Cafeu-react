@@ -3,8 +3,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { Settings } from "./Settings";
+
 import "../../../css/userPage.css";
+import { Settings } from "../../../src/components/userpage/Settings";
 
 export default function UserPage() {
   return (
@@ -29,11 +30,11 @@ export default function UserPage() {
               >
                 <div className={"order-user-img"}>
                   <img
-                    src={"/icons/default-user.svg"}
+                    src={"/img/icon/default-user.svg"}
                     className={"order-user-avatar"}
                   />
                   <div className={"order-user-icon-box"}>
-                    <img src={"/icons/user-badge.svg"} />
+                    <img src={"/img/icon/user-icon.svg"} />
                   </div>
                 </div>
                 <span className={"order-user-name"}>Martin</span>
