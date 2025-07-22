@@ -7,6 +7,8 @@ import Layout from "../components/layout/Layout";
 import ScheduleSection from "../components/schedule/ScheduleSection";
 import TeamSection from "../components/team/TeamSection";
 
+
+
 const AboutPage1 = () => {
   return (
     <div className="wrapper">
