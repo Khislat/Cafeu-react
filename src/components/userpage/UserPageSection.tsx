@@ -1,3 +1,4 @@
+import React from 'react';
 import UserPageForm from "../authUserPage/UserPageForm";
 
 

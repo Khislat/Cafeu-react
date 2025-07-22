@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutSection from "../components/about/AboutSection";
 import BreadcrumbSection from "../components/breadcrumb/BreadcrumbSection";
 import CustomerSection from "../components/customer/CustomerSection";

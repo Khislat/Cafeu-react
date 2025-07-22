@@ -1,3 +1,4 @@
+import React from 'react';
 import OrdersPage from "../oredersPage";
 
 const CartSection = () => {

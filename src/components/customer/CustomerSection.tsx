@@ -1,3 +1,4 @@
+import React from 'react';
 import { customerList } from "../../data/Data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";

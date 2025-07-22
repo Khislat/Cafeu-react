@@ -1,3 +1,4 @@
+import React from 'react';
 import BillingSection from "./BillingSection";
 import OrderSection from "./OrderSection";
 import { useCafeuContext } from "../../context/CafeuContext";

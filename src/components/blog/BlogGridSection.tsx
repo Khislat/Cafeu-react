@@ -1,3 +1,4 @@
+import React from 'react';
 import { useCafeuContext } from "../../context/CafeuContext";
 import { blogDataList } from "../../data/Data";
 

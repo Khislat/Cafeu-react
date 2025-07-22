@@ -1,3 +1,4 @@
+import React from 'react';
 const InfoSection = () => {
   return (
     <div className="cb-item-info-area home5-info dark-mode pt-105 pb-65">

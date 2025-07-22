@@ -1,3 +1,4 @@
+import React from 'react';
 import { createSelector } from '@reduxjs/toolkit';
 import { retrieveTopUsers } from '../../Redux/homePage/selector';
 import { useSelector } from 'react-redux';

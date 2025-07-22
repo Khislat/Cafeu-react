@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
 import { Provider } from 'react-redux';
@@ -14,14 +15,17 @@ import { CafeuProvider } from './context/CafeuContext';
 import { store } from './store';
 import App from './App';
 import ContextProvider from './components/context/ContextProvider';
+import { SocketProvider } from './context/SocketContext';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<CafeuProvider>
 		<ContextProvider>
-			<Provider store={store}>
-				<App />
-				<ToastContainer />
-			</Provider>
+			<SocketProvider>
+				<Provider store={store}>
+					<App />
+					<ToastContainer />
+				</Provider>
+			</SocketProvider>
 		</ContextProvider>
 	</CafeuProvider>,
 );

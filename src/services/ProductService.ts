@@ -10,6 +10,7 @@ class ProductService {
 	}
 
 	public async getProducts(input: ProductInquiry): Promise<Product[]> {
+		console.log('✅ serverApi:', serverApi);
 		try {
 			let url = `${this.path}/product/all?order=${input.order}&page=${input.page}&limit=${input.limit}`;
 			if (input.productCollection) url += `&productCollection=${input.productCollection}`;
@@ -31,11 +32,11 @@ class ProductService {
 			const url = `${this.path}/product/${productId}`;
 			const result = await axios.get(url, { withCredentials: true });
 
-			console.log("getProduct:", result);
+			console.log('getProduct:', result);
 
 			return result.data;
 		} catch (err) {
-			console.log("Error, getProduct:", err);
+			console.log('Error, getProduct:', err);
 			throw err;
 		}
 	}

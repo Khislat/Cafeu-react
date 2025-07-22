@@ -4,6 +4,7 @@ import Layout from "../components/layout/Layout";
 import TeamDetailSection from "../components/team/TeamDetailSection";
 import PartnerSection from "../components/partner/PartnerSection";
 import { teamList } from "../data/Data";
+import React from 'react';
 
 const TeamDetailsPage = () => {
   const { teamSlug } = useParams();

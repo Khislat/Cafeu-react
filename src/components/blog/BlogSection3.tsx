@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import { blogDataList } from "../../data/Data";
 import { motion } from "framer-motion";

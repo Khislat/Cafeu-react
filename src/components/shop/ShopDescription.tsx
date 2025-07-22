@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Nav, Tab } from "react-bootstrap";
 import ShopDescriptionPane from "./ShopDescriptionPane";

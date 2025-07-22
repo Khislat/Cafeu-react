@@ -1,3 +1,4 @@
+import React from 'react';
 const ShopDescriptionPane = () => {
   return (
     <div className="blog-details">

@@ -1,3 +1,4 @@
+import React from 'react';
 const CustomerSection3 = () => {
   return (
     <section>

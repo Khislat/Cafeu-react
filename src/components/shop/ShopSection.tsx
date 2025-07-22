@@ -1,3 +1,4 @@
+import React from 'react';
 import ShopTopSortingSection from './ShopTopSortingSection';
 import ShopAllProductSection from './ShopAllProductSection';
 import ShopSearchBarSection from './ShopSearchBarSection';

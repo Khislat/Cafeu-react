@@ -1,3 +1,4 @@
+import React from "react";
 import BannerSection from '../banner/BannerSection';
 import SocialSection from '../social/SocialSection';
 import FeatureSection from '../feature/FeatureSection';

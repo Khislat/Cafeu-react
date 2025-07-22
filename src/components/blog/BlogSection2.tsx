@@ -1,3 +1,4 @@
+import React from 'react';
 import { blogDataList } from "../../data/Data";
 
 const BlogSection2 = () => {

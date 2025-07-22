@@ -1,3 +1,4 @@
+import React from 'react';
 import BlogGridSection from "../components/blog/BlogGridSection";
 import BreadcrumbSection from "../components/breadcrumb/BreadcrumbSection";
 import Layout from "../components/layout/Layout";

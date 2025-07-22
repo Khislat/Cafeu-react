@@ -129,7 +129,7 @@
 // };
 
 // export default MenuSection;
-
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCafeuContext } from '../../context/CafeuContext';
 import { Nav } from 'react-bootstrap';
@@ -177,6 +177,11 @@ const MenuSection = () => {
 			.getProducts(productSearch)
 			.then((data) => {
 				setSpecialDishes(data);
+
+				product.getProducts(productSearch).then((data) => {
+					console.log('🚀 Received products:', data);
+					setSpecialDishes(data);
+				});
 			})
 			.catch((err) => console.log(err));
 
@@ -315,7 +320,7 @@ const MenuSection = () => {
 																<span className="icofont-plus"></span>
 																{/* <ToastContainer /> */}
 															</a>
-															
+
 															<a
 																className="sm-custom-btn cart-btn"
 																role="button"

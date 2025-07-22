@@ -1,3 +1,4 @@
+
 import { teamList } from "../../data/Data";
 import React from "react";
 interface TeamProp {

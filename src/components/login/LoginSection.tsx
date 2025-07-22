@@ -1,3 +1,4 @@
+import React from 'react';
 import LoginForm from '../form/LoginForm';
 import { useGlobals } from '../hooks/useGlobals';
 

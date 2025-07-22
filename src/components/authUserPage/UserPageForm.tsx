@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Container, Stack } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';

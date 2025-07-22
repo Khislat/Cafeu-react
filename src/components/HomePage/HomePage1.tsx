@@ -1,3 +1,4 @@
+import React from "react";
 import { CartItem } from '../../../libs/types/search';
 import { useGlobals } from '../hooks/useGlobals';
 import Header from './Header';

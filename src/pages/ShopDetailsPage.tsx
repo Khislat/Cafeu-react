@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 import ShopDetailSection from '../components/shop/ShopDetailSection';
 import { productList } from '../data/Data';
 import { useEffect } from 'react';
-
+import React from 'react';
 import { setChosenProduct } from '../Redux/homePage/slice';
 
 import { useDispatch, useSelector } from 'react-redux';

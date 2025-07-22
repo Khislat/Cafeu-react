@@ -1,3 +1,4 @@
+import React from 'react';
 import { productList } from "../../data/Data";
 
 const ShopPopularProductSection = () => {
