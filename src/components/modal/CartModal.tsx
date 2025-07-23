@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import { useCafeuContext } from "../../context/CafeuContext";
 import { Modal } from "react-bootstrap";

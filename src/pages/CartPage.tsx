@@ -1,3 +1,4 @@
+import React from 'react';
 import BreadcrumbSection from "../components/breadcrumb/BreadcrumbSection";
 import CartSection from "../components/cart/CartSection";
 import Layout from "../components/layout/Layout";
@@ -6,7 +7,7 @@ const CartPage = () => {
 	return (
 		<div className="wrapper">
 			<Layout>
-				<BreadcrumbSection header="Cart Page" title="Cart" />
+				<BreadcrumbSection header="Orders Page" title="Orders" />
 				<CartSection />
 			</Layout>
 		</div>

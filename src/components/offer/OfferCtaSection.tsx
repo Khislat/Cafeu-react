@@ -1,3 +1,4 @@
+import React from 'react';
 const OfferCtaSection = () => {
   return (
     <div className="cb-offer-cta pt-105 pb-105 text-center text-md-start">

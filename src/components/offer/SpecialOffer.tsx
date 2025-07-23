@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Tab, Nav } from "react-bootstrap";
 import TabPaneSection from "./TabPaneSection";

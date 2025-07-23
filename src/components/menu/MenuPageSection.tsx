@@ -1,7 +1,10 @@
+import React from 'react';
 import BreadcrumbSection from "../breadcrumb/BreadcrumbSection";
 import MenuProducts from "./MenuProducts";
 import { useCafeuContext } from "../../context/CafeuContext";
 import ProductLightBoxModal from "../modal/ProductLightBoxModal";
+
+
 
 const MenuPageSection = () => {
   const { menuItemsToShow } = useCafeuContext();

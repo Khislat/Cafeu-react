@@ -1,3 +1,4 @@
+import React from 'react';
 import { foodCategoryData } from "../../data/Data";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";

@@ -1,3 +1,4 @@
+import React from 'react';
 import { restaurantData } from "../../data/Data";
 
 const TopRatedResturantSection = () => {

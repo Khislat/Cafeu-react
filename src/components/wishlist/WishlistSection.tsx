@@ -1,3 +1,4 @@
+import React from 'react';
 import ProductTable from "../table/ProductTable";
 import PartnerSection from "../partner/PartnerSection";
 import { useCafeuContext } from "../../context/CafeuContext";

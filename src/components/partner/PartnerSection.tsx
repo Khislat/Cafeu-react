@@ -1,3 +1,4 @@
+import React from 'react';
 import { partnerList } from "../../data/Data";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";

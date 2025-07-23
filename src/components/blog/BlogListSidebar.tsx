@@ -1,3 +1,4 @@
+import React from 'react';
 import BlogListRecentPost from "./BlogListRecentPost";
 import BlogSlider from "./BlogSlider";
 import BlogSearchFilter from "./BlogSearchFilter";

@@ -1,3 +1,4 @@
+import React from 'react';
 import BreadcrumbSection from "../components/breadcrumb/BreadcrumbSection";
 import Layout from "../components/layout/Layout";
 import ShopSection from "../components/shop/ShopSection";

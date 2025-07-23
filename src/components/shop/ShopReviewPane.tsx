@@ -1,3 +1,4 @@
+import React from 'react';
 const ShopReviewPane = () => {
   return (
     <div className="product-review p-0">
